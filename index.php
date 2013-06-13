@@ -78,7 +78,7 @@ print '************************performing query****************************' . "
 
 //$referer_url='http://apps.webofknowledge.com/UA_GeneralSearch_input.do;jsessionid='.$jsid.'?product=UA&search_mode=GeneralSearch&SID='.$sid.'&preferencesSaved=';
 //print $referer_url."\n";
-$result="";
+$result = "";
 while (!$nEntries) {
     print $result;
     $search = curl_init();
@@ -132,17 +132,22 @@ for ($i = 0; $i < $nEntries; $i++) {
     $articleURL[$i] = "http://apps.webofknowledge.com/full_record.do?product=UA&search_mode=GeneralSearch&qid=" . $qid . "&SID=" . $sid . "&doc=" . $i;
     curl_setopt($articleQuery, CURLOPT_URL, $articleURL[$i]);
     $articleEntry[$i] = array();
-    $articleEntry[$i]['content'] = curl_exec($articleQuery);
-    $html = str_get_html($articleEntry[$i]['content']);
+    $authorStr = null;
+    while (!$authorStr) {
+        $articleEntry[$i]['content'] = curl_exec($articleQuery);
+        $html = str_get_html($articleEntry[$i]['content']);
+        //print $articleEntry[$i]."\n";
+        $authorStr = $html->find('a[title^="Find more records by this author"]', 0);
+    }
     $refLink = "http://apps.webofknowledge.com/" . $html->find('a[title^="View this record"]', 0)->href;
     print "\n" . $refLink;
-    //print $articleEntry[$i]."\n";
+    $authorStr = $authorStr->parent()->plaintext;
     print "\n" . "Authors: ";
-    $authorStr = $html->find('a[title^="Find more records by this author"]', 0)->parent()->plaintext;
-    preg_match_all('/\([^)]+\)/', $authorStr,$authors);
-   
-    foreach($authors[0] as $author){
-        print " ".$author." ";
+
+    preg_match_all('/\([^)]+\)/', $authorStr, $authors);
+
+    foreach ($authors[0] as $author) {
+        print " " . $author . " ";
     }
     curl_close($articleQuery);
 }
