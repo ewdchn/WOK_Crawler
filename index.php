@@ -1,4 +1,5 @@
 <?php
+set_time_limit(0);
 require_once 'simple_html_dom.php';
 $post=array(
 "fieldCount"=>"3",
@@ -43,6 +44,7 @@ curl_setopt($ch, CURLOPT_USERAGENT,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWeb
 //curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 //curl_setopt($ch, CURLOPT_COOKIEJAR , "cookie.txt");
 $main_page = curl_exec($ch);
+print "main"+"\n";
 print $main_page;
 //get SID
 preg_match('/^Set-Cookie:\s*([^;]*)/mi', $main_page, $m);
@@ -71,7 +73,7 @@ print 'SID: '.$sid."\n";
 
 //print $main_page;
 
-
+curl_close($ch);
 print '************************performing query****************************'."\r\n";
 
 //$referer_url='http://apps.webofknowledge.com/UA_GeneralSearch_input.do;jsessionid='.$jsid.'?product=UA&search_mode=GeneralSearch&SID='.$sid.'&preferencesSaved=';
@@ -87,7 +89,6 @@ curl_setopt($search, CURLOPT_USERAGENT,"Mozilla/5.0 (Windows NT 6.1; WOW64) Appl
 curl_setopt($search, CURLOPT_POST, true);
 curl_setopt($search,CURLOPT_POSTFIELDS, http_build_query($post));
 //curl_setopt($search,CURLOPT_COOKIEFILE,"cookie.txt");
-//curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 //curl_setopt( $search, CURLOPT_REFERER , $referer_url );
 //curl_setopt($search, CURLOPT_COOKIEJAR , "cookie.txt");
 $result = curl_exec($search);
@@ -97,14 +98,35 @@ parse_str($url_comp['query'],$output);
 $qid = $output['qid'];
 print "qid: ".$qid."\n";
 print "\n"."*************************results***************************"."\n";
-print "URL: ".$last_url."\n";
+//print "URL: ".$last_url."\n";
 $html = str_get_html($result);
-foreach($html->find('tr[id^=RECORD_]') as $record){
-    print $record->find('a[class=smallV110]',0)->plaintext."\n";
-    print $record->children(1)->children(1)->plaintext."\n";
-}
+$nEntries =  (int)($html->find('span[id=hitCount.top]',0)->innertext);
+print "number of results:".$nEntries;
+//foreach($html->find('tr[id^=RECORD_]') as $record){
+//    print $record->find('a[class=smallV110]',0)->plaintext."\n";
+//    print $record->children(1)->children(1)->plaintext."\n";
+//}
+
 //print $result;
 
+//*******************************Article URLs**********************************//
+$articleQuery = curl_init();
+//curl_setopt($articalQuery, CURLOPT_HEADER, true);
+curl_setopt($articleQuery, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
+curl_setopt($articleQuery, CURLOPT_AUTOREFERER, false);
+curl_setopt($articleQuery, CURLOPT_FOLLOWLOCATION, true);
+curl_setopt($articleQuery, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($articleQuery, CURLOPT_USERAGENT,"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36");
+$articleURL=array();
+$articleEntry=array();
+//Request URL:http://apps.webofknowledge.com/full_record.do?product=UA&search_mode=GeneralSearch&qid=2&SID=P2b38BICoOj4c16aaNC&page=1&doc=1
+for($i=0;$i<$nEntries;$i++){
+    print "Processing Entry: ".$i;
+    $articleURL[$i]="http://apps.webofknowledge.com/full_record.do?product=UA&search_mode=GeneralSearch&qid=".$qid."&SID=".$sid."&doc=".$i;
+    curl_setopt($articleQuery,CURLOPT_URL,$articleURL[$i]);
+    $articleEntry[$i]=curl_exec($articleQuery);
+    $html = str_get_html($articleEntry[$i]);
+    print $articleEntry[$i]."\n";
+}
 curl_close($search);
-curl_close($ch);
 ?>
