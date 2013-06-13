@@ -98,7 +98,6 @@ parse_str($url_comp['query'],$output);
 $qid = $output['qid'];
 print "qid: ".$qid."\n";
 print "\n"."*************************results***************************"."\n";
-//print "URL: ".$last_url."\n";
 $html = str_get_html($result);
 $nEntries =  (int)($html->find('span[id=hitCount.top]',0)->innertext);
 print "number of results:".$nEntries;
@@ -106,8 +105,10 @@ print "number of results:".$nEntries;
 //    print $record->find('a[class=smallV110]',0)->plaintext."\n";
 //    print $record->children(1)->children(1)->plaintext."\n";
 //}
+//print "URL: ".$last_url."\n";
 
-//print $result;
+
+print $result;
 
 //*******************************Article URLs**********************************//
 $articleQuery = curl_init();
@@ -121,12 +122,14 @@ $articleURL=array();
 $articleEntry=array();
 //Request URL:http://apps.webofknowledge.com/full_record.do?product=UA&search_mode=GeneralSearch&qid=2&SID=P2b38BICoOj4c16aaNC&page=1&doc=1
 for($i=0;$i<$nEntries;$i++){
-    print "Processing Entry: ".$i;
+    print "\n"."Processing Entry: ".$i."\n";
     $articleURL[$i]="http://apps.webofknowledge.com/full_record.do?product=UA&search_mode=GeneralSearch&qid=".$qid."&SID=".$sid."&doc=".$i;
     curl_setopt($articleQuery,CURLOPT_URL,$articleURL[$i]);
     $articleEntry[$i]=curl_exec($articleQuery);
     $html = str_get_html($articleEntry[$i]);
-    print $articleEntry[$i]."\n";
+    //print $articleEntry[$i]."\n";
+    $refLink = "http://apps.webofknowledge.com/".$html->find('a[title^="View this record"]',0)->href;
+    print $refLink;
 }
 curl_close($search);
 ?>
