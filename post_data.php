@@ -1,4 +1,5 @@
 <?php
+
 function XML_add($doc, $parent, $child, $text = "") {
     // $parent --> DOM node
     // $child --> string
@@ -12,20 +13,86 @@ function XML_add($doc, $parent, $child, $text = "") {
 
 function get_DOI($file) {
     //print $file;
-    $ans="";
+    $ans = "";
     $html = str_get_html($file);
     foreach ($html->find('span[class=FR_label]') as $ttt) {
         $pos = strpos($ttt->plaintext, 'DOI');
         //print $pos."\n";
         if ($pos === false) {
+            
         } else {
             $ans = $ttt->nextSibling()->plaintext;
             //print $ans;
-            if(strpos($ans, '10')===0){return $ans;}
-            else return "";
+            if (strpos($ans, '10') === 0) {
+                return $ans;
+            }
+            else
+                return "";
         }
     }
 }
+
+function get_DOI2($html) {
+    foreach ($html->find('span[class=label]') as $span) {
+        $pos = strpos($span->plaintext, 'DOI');
+        if ($pos === false) {
+            
+        } else {
+            $ans = $span->nextSibling()->plaintext;
+            //print $ans;
+            if (strpos($ans, '10') === 0) {
+                return $ans;
+            }
+            else
+                return "";
+        }
+    }
+}
+
+function get_Record($record) {
+    $moreAuthors = 'et al';
+    $ans = array();
+    $ans['authors'] = array();
+    $titleNode = $record->find('span[class=reference-title] value', 0);
+    if (!$titleNode) {
+        // print $i . "unavailable" . "\n";
+        return null;
+    } else {
+        $ans['title'] = $titleNode->innertext;
+        if (!$titleNode->parent()->parent()->href) {
+            //print 'have no link: ' . $title . "\n";
+            $authorStr = $titleNode->parent()->next_sibling()->plaintext;
+        } else {
+            //print "URL: ".$titleNode->parent()->parent()->href;
+            parse_str($titleNode->parent()->parent()->href, $url_vars);
+            //print_r($url_vars);
+            $ans['UT'] = $url_vars['amp;isickref'];
+            //print $UT;
+            //print 'link: ' . $lnk . "\n";
+            $authorStr = $titleNode->parent()->parent()->next_sibling()->plaintext;
+            //print $title."  ".$authorStr;
+        }
+        list($dump, $authors) = explode(':', $authorStr);
+        $authors = explode(';', $authors);
+        // print " ". $title . "\n  ";
+        foreach ($authors as $author) {
+            if(!(strpos($author,$moreAuthors)===false)){
+                $ans['more_authors']=true;break;
+            }
+            else{
+            $author = trim($author, " .");
+            array_push($ans['authors'], $author);
+            }
+            // print "|" . $author . "|";
+        }
+        $tmp =  get_DOI2($record);
+        $ans['DOI'] = $tmp;
+        // print "\n  " . $DOI . "\n";
+        //print_r($ans);
+        return $ans;
+    }
+}
+
 $post = array(
     "fieldCount" => "3",
     "action" => "search",
