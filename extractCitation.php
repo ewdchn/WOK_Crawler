@@ -81,13 +81,17 @@ curl_setopt($citQuery, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($citQuery, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36");
 
 
-$citation = array();
+$citDoc = new DOMDocument();
+$citDoc->formatOutput = true;
+$r = $citDoc->createElement("citations");
+$citDoc->appendChild($r);
+
 $papers = $doc->getElementsByTagName("paper");
 foreach ($papers as $paper) {
     $citationCtr = 0;
     $order = (int) ($paper->getElementsByTagName("order")->item(0)->nodeValue);
     $UT = $paper->getElementsByTagName("UT")->item(0)->nodeValue;
-    $citation[$order] = array();
+    $citation = array();
     if ($UT) {
         //http://apps.webofknowledge.com/summary.do?product=UA&parentProduct=UA&search_mode=CitedRefList&parentQid=1&qid=2&SID=V1J3pefKLcEm@cdjm62&page=2
         $nextPageURLHeader = 'http://apps.webofknowledge.com/summary.do?product=UA&parentProduct=UA&search_mode=CitedRefList&';
@@ -109,8 +113,8 @@ foreach ($papers as $paper) {
             foreach ($html->find('tr[id^=RECORD_]') as $record) {
                 $tmp = get_Record($record);
                 if (isset($tmp)) {
-                    print_r($tmp);
-                    array_push($citation[$order], $tmp);
+                    // print_r($tmp);
+                    array_push($citation, $tmp);
                 }
             }
             if ($i != $nPages - 1) {
@@ -120,7 +124,23 @@ foreach ($papers as $paper) {
                 $html = str_get_html($page);
             }
         }
-        return;
+        //print_r($citation);
+        //XML_add($doc, $parent, $child, $text = "");
+        $p = XML_add($citDoc, $r, 'paper');
+        XML_add($citDoc, $p, "order", $order);
+        foreach ($citation as $citedPaper) {
+            $cp = XML_add($citDoc, $p, 'citedPaper');
+            foreach ($citedPaper as $key => $value) {
+                if ($key == 'authors') {
+                    foreach ($value as $authorName) {
+                        XML_add($citDoc, $cp, "author", $authorName);
+                    }
+                } else {
+                    XML_add($citDoc, $cp, $key, $value);
+                }
+            }
+        }
+        $citDoc->save("citedPaper.xml");
     }
 }
 ?>
