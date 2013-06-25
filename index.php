@@ -3,21 +3,6 @@
 require_once 'simple_html_dom.php';
 require_once 'post_data.php';
 
-function get_DOI($file) {
-    //print $file;
-    $html = str_get_html($file);
-    foreach ($html->find('span[class=FR_label]') as $ttt) {
-        $pos = strpos($ttt->plaintext, 'DOI');
-        //print $pos."\n";
-        if ($pos === false) {
-            
-        } else {
-            $ans = $ttt->nextSibling()->plaintext;
-            //print $ans;
-            return $ans;
-        }
-    }
-}
 
 set_time_limit(0);
 
@@ -111,7 +96,6 @@ while (!$nEntries) {
 //curl_setopt($articalQuery, CURLOPT_HEADER, true);
 $articleURL = array();
 $articleEntry = array();
-$nEntries = 5;
 //Request URL:http://apps.webofknowledge.com/full_record.do?product=UA&search_mode=GeneralSearch&qid=2&SID=P2b38BICoOj4c16aaNC&page=1&doc=1
 print "***************************************************extracing Each Entry**********************************************************\n";
 for ($i = 0; $i < $nEntries; $i++) {
@@ -141,20 +125,24 @@ for ($i = 0; $i < $nEntries; $i++) {
     $articleEntry[$i]['DOI'] = get_DOI($articleEntry[$i]['content']);
     $articleEntry[$i]['content'] = (string) ($i + 1);
     // cit list link needs : http://apps.webofknowledge.com/CitedRefList.do?product=UA&sortBy=PY.D&WOS:, SID,mode = CitedRefList
-    $citListRef = 'http://apps.webofknowledge.com' . $html->find('a[title^="View this record"]', 0)->href;
-    parse_str($citListRef, $url_vars);
+    if ($html->find('a[title^="View this record"]', 0)) {
+        $citListRef = 'http://apps.webofknowledge.com' . $html->find('a[title^="View this record"]', 0)->href;
+        parse_str($citListRef, $url_vars);
+        $articleEntry[$i]['UT'] = $url_vars['amp;UT'];
+    } else {
+        $articleEntry[$i]['UT'] = "";
+    }
     $authorStr = $authorStr->parent()->plaintext;
     $titleStr = $html->find('td[class=FullRecTitle]', 0)->find('value', 0)->plaintext;
     trim($titleStr, ' ');
     $articleEntry[$i]['title'] = str_replace('  ', ' ', $titleStr);
-    $articleEntry[$i]['UT'] = $url_vars['amp;UT'];
     $articleEntry[$i]['authors'] = array();
 //    print "\nRef Link = " . $citListRef;
 //    print "\npaper UT =" . $articleEntry[$i]['UT'] . "\n";
     print "\n" . "Authors: ";
-    preg_match_all('/\([^)]+\)/', $authorStr, $authors);
-    foreach ($authors[0] as $author) {
-        $author = trim($author, "()");
+    preg_match_all('/\(([^\(\)]+)\)/', $authorStr, $authors);
+    foreach ($authors[1] as $author) {
+        //$author = trim($author, "()");
         if ($author != "s") {
             array_push($articleEntry[$i]['authors'], $author);
             print "|" . $author . "|";
@@ -164,30 +152,20 @@ for ($i = 0; $i < $nEntries; $i++) {
     print"\n";
     print_r($articleEntry[$i]);
 }
-return
 //dumpXML
         $doc = new DOMDocument();
 $doc->formatOutput = true;
 $r = $doc->createElement("papers");
 $doc->appendChild($r);
 foreach ($articleEntry as $paper) {
-    print_r($paper);
-    $p = $doc->createElement("paper");
-    $r->appendChild($p);
-    $title = $doc->createElement('title');
-    $title->appendChild($doc->createTextNode($paper['title']));
-    $p->appendChild($title);
-    $paperID = $doc->createElement('id');
-    $paperID->appendChild($doc->createTextNode($paper['order']));
-    $p->appendChild($paperID);
+    $p = XML_add($doc, $r, "paper");
+    XML_add($doc, $p, "title", $paper['title']);
+    XML_add($doc, $p, "DOI", $paper['DOI']);
+    XML_add($doc, $p, "UT", $paper['UT']);
+    XML_add($doc, $p, 'order', $paper['content']);
     foreach ($paper['authors'] as $authorName) {
-        $author = $doc->createElement("author");
-        $author->appendChild($doc->createTextNode($authorName));
-        $p->appendChild($author);
+        XML_add($doc, $p, "author", $authorName);
     }
-    $u = $doc->createElement('ut');
-    $u->appendChild($doc->createTextNode($paper['UT']));
-    $p->appendChild($u);
 }
 $doc->save("papers.xml");
 return;
