@@ -1,39 +1,26 @@
 <?php
 
-set_time_limit(0);
 require_once 'simple_html_dom.php';
-$post = array(
-    "fieldCount" => "3",
-    "action" => "search",
-    "product" => "UA",
-    "search_mode" => "GeneralSearch",
-    "max_field_count" => "25",
-    "value(input1)" => "Digital humanities",
-    "value(select1)" => "TS",
-    "value(hidInput1)" => "initVoid",
-    "value(hidShowIcon1)" => "0",
-    "value(bool_1_2)" => "OR",
-    "value(input2)" => "humanities computing",
-    "value(select2)" => "TS",
-    "value(hidInput2)" => "",
-    "value(hidShowIcon2)" => "0",
-    "value(bool_2_3)" => "AND",
-    "value(input3)" => "",
-    "value(select3)" => "SO",
-    "value(hidInput3)" => "SO",
-    "value(hidShowIcon3)" => "1",
-    "x" => "184",
-    "y" => "435",
-    "limitStatus" => "collapsed",
-    "ss_lemmatization" => "On",
-    "period" => "Range Selection",
-    "range" => "ALL",
-    "startYear" => "1900",
-    "endYear" => "2013",
-    "rs_rec_per_page" => "10",
-    "rs_sort_by" => "PY.D;LD.D;SO.A;VL.D;PG.A;AU.A",
-    "rs_linksWindows" => "newWindow",
-);
+require_once 'post_data.php';
+
+function get_DOI($file) {
+    //print $file;
+    $html = str_get_html($file);
+    foreach ($html->find('span[class=FR_label]') as $ttt) {
+        $pos = strpos($ttt->plaintext, 'DOI');
+        //print $pos."\n";
+        if ($pos === false) {
+            
+        } else {
+            $ans = $ttt->nextSibling()->plaintext;
+            //print $ans;
+            return $ans;
+        }
+    }
+}
+
+set_time_limit(0);
+
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_URL, "www.webofknowledge.com");
@@ -45,8 +32,8 @@ curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWe
 //curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 //curl_setopt($ch, CURLOPT_COOKIEJAR , "cookie.txt");
 $main_page = curl_exec($ch);
-print "main" + "\n";
-print $main_page;
+//print "main" + "\n";
+//print $main_page;
 //get SID
 preg_match('/^Set-Cookie:\s*([^;]*)/mi', $main_page, $m);
 parse_str($m[1], $cookies);
@@ -95,6 +82,9 @@ while (!$nEntries) {
 //curl_setopt( $search, CURLOPT_REFERER , $referer_url );
 //curl_setopt($search, CURLOPT_COOKIEJAR , "cookie.txt");
     $result = curl_exec($search);
+    preg_match('/handle_nav_final_counts\([^)]+\)/', $result, $m);
+    preg_match('/\'[^,]+\'/', $m[0], $n);
+    $nEntries = intval(str_replace('\'', '', $n[0]));
     $last_url = curl_getinfo($search, CURLINFO_EFFECTIVE_URL);
     $url_comp = parse_url($last_url);
     parse_str($url_comp['query'], $output);
@@ -102,11 +92,12 @@ while (!$nEntries) {
     print "qid: " . $qid . "\n";
     print "\n" . "*************************results***************************" . "\n";
     $html = str_get_html($result);
-    $entries_str = $html->find('span[id=hitCount.top]', 0)->innertext;
+    $entries_str = $html->find('span[id=hitCount.bottom]', 0)->innertext;
     str_replace(" ", "", $entries_str);
 //print "\n".$entries_str."\n";
+    print "entries string" . "\n" . $entries_str . "\n";
     $nEntries = (int) ($entries_str);
-    print "number of results:" . $nEntries;
+    print "number of results:" . $nEntries . "\n";
 //foreach($html->find('tr[id^=RECORD_]') as $record){
 //    print $record->find('a[class=smallV110]',0)->plaintext."\n";
 //    print $record->children(1)->children(1)->plaintext."\n";
@@ -120,8 +111,11 @@ while (!$nEntries) {
 //curl_setopt($articalQuery, CURLOPT_HEADER, true);
 $articleURL = array();
 $articleEntry = array();
+$nEntries = 5;
 //Request URL:http://apps.webofknowledge.com/full_record.do?product=UA&search_mode=GeneralSearch&qid=2&SID=P2b38BICoOj4c16aaNC&page=1&doc=1
+print "***************************************************extracing Each Entry**********************************************************\n";
 for ($i = 0; $i < $nEntries; $i++) {
+    $html = null;
     print "\n" . "Processing Entry: " . $i . "\n";
     $articleQuery = curl_init();
     curl_setopt($articleQuery, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
@@ -134,21 +128,86 @@ for ($i = 0; $i < $nEntries; $i++) {
     $articleEntry[$i] = array();
     $authorStr = null;
     while (!$authorStr) {
+        print ".";
+        if (array_key_exists('content', $articleEntry[$i]))
+            print $articleEntry[$i]['content'];
         $articleEntry[$i]['content'] = curl_exec($articleQuery);
         $html = str_get_html($articleEntry[$i]['content']);
         //print $articleEntry[$i]."\n";
         $authorStr = $html->find('a[title^="Find more records by this author"]', 0);
     }
-    $refLink = "http://apps.webofknowledge.com/" . $html->find('a[title^="View this record"]', 0)->href;
-    print "\n" . $refLink;
+    //print $articleEntry[$i]['content'];
+    //find DOI if have one
+    $articleEntry[$i]['DOI'] = get_DOI($articleEntry[$i]['content']);
+    $articleEntry[$i]['content'] = (string) ($i + 1);
+    // cit list link needs : http://apps.webofknowledge.com/CitedRefList.do?product=UA&sortBy=PY.D&WOS:, SID,mode = CitedRefList
+    $citListRef = 'http://apps.webofknowledge.com' . $html->find('a[title^="View this record"]', 0)->href;
+    parse_str($citListRef, $url_vars);
     $authorStr = $authorStr->parent()->plaintext;
+    $titleStr = $html->find('td[class=FullRecTitle]', 0)->find('value', 0)->plaintext;
+    trim($titleStr, ' ');
+    $articleEntry[$i]['title'] = str_replace('  ', ' ', $titleStr);
+    $articleEntry[$i]['UT'] = $url_vars['amp;UT'];
+    $articleEntry[$i]['authors'] = array();
+//    print "\nRef Link = " . $citListRef;
+//    print "\npaper UT =" . $articleEntry[$i]['UT'] . "\n";
     print "\n" . "Authors: ";
-
     preg_match_all('/\([^)]+\)/', $authorStr, $authors);
-
     foreach ($authors[0] as $author) {
-        print " " . $author . " ";
+        $author = trim($author, "()");
+        if ($author != "s") {
+            array_push($articleEntry[$i]['authors'], $author);
+            print "|" . $author . "|";
+        }
     }
     curl_close($articleQuery);
+    print"\n";
+    print_r($articleEntry[$i]);
+}
+return
+//dumpXML
+        $doc = new DOMDocument();
+$doc->formatOutput = true;
+$r = $doc->createElement("papers");
+$doc->appendChild($r);
+foreach ($articleEntry as $paper) {
+    print_r($paper);
+    $p = $doc->createElement("paper");
+    $r->appendChild($p);
+    $title = $doc->createElement('title');
+    $title->appendChild($doc->createTextNode($paper['title']));
+    $p->appendChild($title);
+    $paperID = $doc->createElement('id');
+    $paperID->appendChild($doc->createTextNode($paper['order']));
+    $p->appendChild($paperID);
+    foreach ($paper['authors'] as $authorName) {
+        $author = $doc->createElement("author");
+        $author->appendChild($doc->createTextNode($authorName));
+        $p->appendChild($author);
+    }
+    $u = $doc->createElement('ut');
+    $u->appendChild($doc->createTextNode($paper['UT']));
+    $p->appendChild($u);
+}
+$doc->save("papers.xml");
+return;
+print '********************************************extraction Lvl 1 Citation********************************************' . "\n";
+for ($i = 0; $i < $nEntries; $i++) {
+    $citQuery = curl_init();
+    $citLinkHeader = 'http://apps.webofknowledge.com/CitedRefList.do?product=UA&sortBy=PY.D&search_mode=CitedRefList&SID=';
+    curl_setopt($citQuery, CURLOPT_AUTOREFERER, false);
+    curl_setopt($citQuery, CURLOPT_FOLLOWLOCATION, true);
+    curl_setopt($citQuery, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($citQuery, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36");
+    $queryURL = $citLinkHeader . $SID . '&UT=' . $articleEntry[$i]['UT'];
+    //curl_setopt($articleQuery, CURLOPT_URL, $articleEntry[$i]['citLink']);
+    $result = curl_exec($citQuery);
+
+    $html = str_get_html($result);
+    $nextPageLnk = $html->find();
+    $nPages = (int) ($html->find('span[id="pageCount.top"]', 0)->plaintext);
+    for ($j = 1; $j <= $nPages; $j++) {
+        curl_setopt($citQuery, CURLOPT_URL, $citLinkHeader . '&page=' . $j);
+    }
 }
 ?>
