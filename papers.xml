@@ -1,0 +1,2898 @@
+<?xml version="1.0"?>
+<papers>
+  <paper>
+    <title>Introduction: Knowledge in the Making: Drawing and Writing as Research Techniques</title>
+    <DOI>10.1017/S0269889713000033</DOI>
+    <UT>WOS:000318398900001</UT>
+    <order>1</order>
+    <author>Hoffmann, Christoph</author>
+    <author>Wittmann, Barbara</author>
+  </paper>
+  <paper>
+    <title>Introduction: Knowledge in the Making: Drawing and Writing as Research Techniques</title>
+    <DOI>10.1017/S0269889713000033</DOI>
+    <UT>WOS:000318398900001</UT>
+    <order>2</order>
+    <author>Hoffmann, Christoph</author>
+    <author>Wittmann, Barbara</author>
+  </paper>
+  <paper>
+    <title>The social shaping of digital research</title>
+    <DOI>10.1080/13645579.2013.774171</DOI>
+    <UT>WOS:000317273800002</UT>
+    <order>3</order>
+    <author>Dutton, William H.</author>
+  </paper>
+  <paper>
+    <title>Introduction: Victorian studies, world literatures, and globalisation</title>
+    <DOI>10.1111/criq.12030</DOI>
+    <UT>WOS:000317747900002</UT>
+    <order>4</order>
+    <author>Gagnier, Regenia</author>
+  </paper>
+  <paper>
+    <title>BRANCHing out: Victorian studies and the digital humanities </title>
+    <DOI>10.1111/criq.12032</DOI>
+    <UT>WOS:000317747900005</UT>
+    <order>5</order>
+    <author>Felluga, Dino Franco</author>
+  </paper>
+  <paper>
+    <title>Information workflow of academic researchers in the evolving information environment: an interview study</title>
+    <DOI>10.1087/20130208</DOI>
+    <UT>WOS:000317710600008</UT>
+    <order>6</order>
+    <author>Newman, Michael L.</author>
+    <author>Sack, John</author>
+  </paper>
+  <paper>
+    <title>DEBATES IN THE DIGITAL HUMANITIES </title>
+    <DOI/>
+    <UT>WOS:000316664700017</UT>
+    <order>7</order>
+    <author>Grigar, Dene</author>
+  </paper>
+  <paper>
+    <title>Dialectometry++</title>
+    <DOI>10.1093/llc/fqs062</DOI>
+    <UT>WOS:000316543200001</UT>
+    <order>8</order>
+    <author>Nerbonne, John</author>
+    <author>Kretzschmar, William A., Jr.</author>
+  </paper>
+  <paper>
+    <title>Toward a Notion of the Archive of the Future: Impressions of Practice by Librarians, Archivists, and Digital Humanities Scholars</title>
+    <DOI>10.1086/669550</DOI>
+    <UT>WOS:000316117900003</UT>
+    <order>9</order>
+    <author>Clement, Tanya</author>
+    <author>Hagenmaier, Wendy</author>
+    <author>Knies, Jennie Levine</author>
+  </paper>
+  <paper>
+    <title>Switching codes: Thinking through digital technology in the humanities and the arts</title>
+    <DOI>10.1080/1472586X.2012.717776</DOI>
+    <UT>WOS:000318346000029</UT>
+    <order>10</order>
+    <author>Guglietti, Maria Victoria</author>
+  </paper>
+  <paper>
+    <title>The bonds of institutional language: A discursive institutionalist approach to the Clerk of the Privy Council's annual report</title>
+    <DOI>10.1111/capa.12002</DOI>
+    <UT>WOS:000316695400003</UT>
+    <order>11</order>
+    <author>Dutil, Patrice A.</author>
+    <author>Ryan, Peter Malachy</author>
+  </paper>
+  <paper>
+    <title>Occupying the Digital Humanities </title>
+    <DOI/>
+    <UT>WOS:000315979200002</UT>
+    <order>12</order>
+    <author>Rice, Jeff</author>
+  </paper>
+  <paper>
+    <title>CONFRONTING THE DIGITAL OR HOW ACADEMIC HISTORY WRITING LOST THE PLOT</title>
+    <DOI>10.2752/147800413X13515292098070</DOI>
+    <UT>WOS:000315550400001</UT>
+    <order>13</order>
+    <author>Hitchcock, Tim</author>
+  </paper>
+  <paper>
+    <title>BEYOND THE FORBIDDEN BEST-SELLERS OF PRE-REVOLUTIONARY FRANCE</title>
+    <DOI>10.1017/S0018246X12000556</DOI>
+    <UT>WOS:000314419800004</UT>
+    <order>14</order>
+    <author>Curran, Mark</author>
+  </paper>
+  <paper>
+    <title>Introduction to the special issue "Soft computing in humanities and social sciences"</title>
+    <DOI>10.1016/j.fss.2012.11.011</DOI>
+    <UT>WOS:000315065100001</UT>
+    <order>15</order>
+    <author>Seising, Rudolf</author>
+    <author>Sanz, Veronica</author>
+  </paper>
+  <paper>
+    <title>Towards a virtual research environment for language and literature researchers</title>
+    <DOI>10.1016/j.future.2012.03.015</DOI>
+    <UT>WOS:000312974500011</UT>
+    <order>16</order>
+    <author>Sarwar, Muhammad S.</author>
+    <author>Doherty, T.</author>
+    <author>Watt, J.</author>
+    <author>Sinnott, Richard O.</author>
+  </paper>
+  <paper>
+    <title>Scholarly primitives: Building institutional infrastructure for humanities e-Science</title>
+    <DOI>10.1016/j.future.2011.06.006</DOI>
+    <UT>WOS:000312974500020</UT>
+    <order>17</order>
+    <author>Blanke, Tobias</author>
+    <author>Hedges, Mark</author>
+  </paper>
+  <paper>
+    <title>RAPPORT: running scientific high-performance computing applications on the cloud</title>
+    <DOI>10.1098/rsta.2012.0073</DOI>
+    <UT>WOS:000312959200006</UT>
+    <order>18</order>
+    <author>Cohen, Jeremy</author>
+    <author>Filippis, Ioannis</author>
+    <author>Woodbridge, Mark</author>
+    <author>Bauer, Daniela</author>
+    <author>Hong, Neil Chue</author>
+    <author>Jackson, Mike</author>
+    <author>Butcher, Sarah</author>
+    <author>Colling, David</author>
+    <author>Darlington, John</author>
+    <author>Fuchs, Brian</author>
+    <author>Harvey, Matt</author>
+  </paper>
+  <paper>
+    <title>Mapping citation patterns of book chapters in the Book Citation Index</title>
+    <DOI>10.1016/j.joi.2013.01.004</DOI>
+    <UT>WOS:000318377100019</UT>
+    <order>19</order>
+    <author>Torres-Salinas, Daniel</author>
+    <author>Rodriguez-Sanchez, Rosa</author>
+    <author>Robinson-Garcia, Nicolas</author>
+    <author>Fdez-Valdivia, J.</author>
+    <author>Garcia, J. A.</author>
+  </paper>
+  <paper>
+    <title>The Web and Digital Humanities : Theoretical and Methodological Concerns</title>
+    <DOI>10.1080/08838151.2012.761699</DOI>
+    <UT>WOS:000316107800006</UT>
+    <order>20</order>
+    <author>Bruegger, Niels</author>
+    <author>Finnemann, Niels Ole</author>
+  </paper>
+  <paper>
+    <title>The utility and validity of bibliographies and their absence in the digital world</title>
+    <DOI>10.3145/epi.2012.ene.09</DOI>
+    <UT>WOS:000315242200009</UT>
+    <order>21</order>
+    <author>Zabala-Vazquez, Jon</author>
+  </paper>
+  <paper>
+    <title>Does place affect user engagement and understanding? Mobile learner perceptions on the streets of New York</title>
+    <DOI/>
+    <UT>WOS:000315314600006</UT>
+    <order>22</order>
+    <author>Cocciolo, Anthony</author>
+    <author>Rabina, Debbie</author>
+  </paper>
+  <paper>
+    <title>Commentary: Television, Business Entertainment, and Civic Culture</title>
+    <DOI>10.1177/1527476411435420</DOI>
+    <UT>WOS:000312732700006</UT>
+    <order>23</order>
+    <author>Boyle, Raymond</author>
+    <author>Kelly, Lisa W.</author>
+  </paper>
+  <paper>
+    <title>Debates in the Digital Humanities </title>
+    <DOI/>
+    <UT>WOS:000312969800023</UT>
+    <order>24</order>
+    <author>Klein, Lauren Frederica</author>
+  </paper>
+  <paper>
+    <title>Integrative Research: The EuroGEOSS Experience</title>
+    <DOI>10.1109/JSTARS.2012.2190382</DOI>
+    <UT>WOS:000313009300003</UT>
+    <order>25</order>
+    <author>Vaccari, Lorenzino</author>
+    <author>Craglia, Massimo</author>
+    <author>Fugazza, Cristiano</author>
+    <author>Nativi, Stefano</author>
+    <author>Santoro, Mattia</author>
+  </paper>
+  <paper>
+    <title>Cinehistory and Experiments on Film</title>
+    <DOI>10.1177/1470412912455617</DOI>
+    <UT>WOS:000313006300003</UT>
+    <order>26</order>
+    <author>Shell, Hanna Rose</author>
+  </paper>
+  <paper>
+    <title>Half-Baked: The State of Evaluation in the Digital Humanities </title>
+    <DOI>10.1093/alh/ajs051</DOI>
+    <UT>WOS:000311265700016</UT>
+    <order>27</order>
+    <author>Clement, Tanya E.</author>
+  </paper>
+  <paper>
+    <title>What's the Big Idea? Intellectual History and the Longue Duree</title>
+    <DOI>10.1080/01916599.2012.714635</DOI>
+    <UT>WOS:000311239500001</UT>
+    <order>28</order>
+    <author>Armitage, David</author>
+  </paper>
+  <paper>
+    <title>Toward modeling the social edition: An approach to understanding the electronic scholarly edition in the context of new and emerging social media</title>
+    <DOI>10.1093/llc/fqs013</DOI>
+    <UT>WOS:000310373700007</UT>
+    <order>29</order>
+    <author>Siemens, Ray</author>
+    <author>Timney, Meagan</author>
+    <author>Leitch, Cara</author>
+    <author>Koolen, Corina</author>
+    <author>Garnett, Alex</author>
+  </paper>
+  <paper>
+    <title>FuturICT: Participatory computing to understand and manage our complex world in a more sustainable and resilient way</title>
+    <DOI>10.1140/epjst/e2012-01686-y</DOI>
+    <UT>WOS:000312246900003</UT>
+    <order>30</order>
+    <author>Helbing, D.</author>
+    <author>Bishop, S.</author>
+    <author>Conte, R.</author>
+    <author>Lukowicz, P.</author>
+    <author>McCarthy, J. B.</author>
+  </paper>
+  <paper>
+    <title>A Rhythmic Time for the Digital </title>
+    <DOI>10.2752/174589312X13276628771721</DOI>
+    <UT>WOS:000310927300001</UT>
+    <order>31</order>
+    <author>Ikoniadou, Eleni</author>
+  </paper>
+  <paper>
+    <title>The Records of the imperial Court councillor Computing . Academy of Sciences and Humanities in Collaboration with the Austrian Academy of Sciences and the Austrian State Archives</title>
+    <DOI/>
+    <UT>WOS:000311863800047</UT>
+    <order>32</order>
+    <author>Hartmann, Peter Claus</author>
+  </paper>
+  <paper>
+    <title>Switching Codes: Thinking Through Digital Technology in the Humanities and the Arts</title>
+    <DOI/>
+    <UT>WOS:000311003100033</UT>
+    <order>33</order>
+    <author>Pandora, Katherine</author>
+  </paper>
+  <paper>
+    <title>The role of online videos in research communication: A content analysis of YouTube videos cited in academic publications</title>
+    <DOI>10.1002/asi.22717</DOI>
+    <UT>WOS:000307730000002</UT>
+    <order>34</order>
+    <author>Kousha, Kayvan</author>
+    <author>Thelwall, Mike</author>
+    <author>Abdoli, Mahshid</author>
+  </paper>
+  <paper>
+    <title>Modeling, encoding and querying multi-structured documents</title>
+    <DOI>10.1016/j.ipm.2011.11.004</DOI>
+    <UT>WOS:000307682100010</UT>
+    <order>35</order>
+    <author>Portier, Pierre-Edouard</author>
+    <author>Chatti, Noureddine</author>
+    <author>Calabretto, Sylvie</author>
+    <author>Egyed-Zsigmond, Eloed</author>
+    <author>Pinon, Jean-Marie</author>
+  </paper>
+  <paper>
+    <title>DEBATES IN THE DIGITAL HUMANITIES </title>
+    <DOI/>
+    <UT>WOS:000307523500052</UT>
+    <order>36</order>
+    <author>Howard, Jennifer</author>
+  </paper>
+  <paper>
+    <title>Impact of digital archival collections on historical research</title>
+    <DOI>10.1002/asi.22650</DOI>
+    <UT>WOS:000306758600004</UT>
+    <order>37</order>
+    <author>Sinn, Donghee</author>
+  </paper>
+  <paper>
+    <title>Interactive software for multimodal analysis</title>
+    <DOI>10.1177/1470357212446414</DOI>
+    <UT>WOS:000306911700007</UT>
+    <order>38</order>
+    <author>O'Halloran, Kay L.</author>
+    <author>Podlasov, Alexey</author>
+    <author>Chua, Alvin</author>
+    <author>Marissa, K. L. E.</author>
+  </paper>
+  <paper>
+    <title>A new hybrid and dynamic fusion of multiple experts for intelligent porch system</title>
+    <DOI>10.1016/j.eswa.2012.02.075</DOI>
+    <UT>WOS:000303281800081</UT>
+    <order>39</order>
+    <author>Kuan, Ta-Wen</author>
+    <author>Tsai, Hsin-Chun</author>
+    <author>Wang, Jhing-Fa</author>
+    <author>Wang, Jia-Ching</author>
+    <author>Chen, Bo-Wei</author>
+    <author>Lin, Zong-You</author>
+  </paper>
+  <paper>
+    <title>Switching Codes: Thinking through Digital Technology in the Humanities and the Arts</title>
+    <DOI>10.1086/665935</DOI>
+    <UT>WOS:000305745800007</UT>
+    <order>40</order>
+    <author>Reside, Doug</author>
+  </paper>
+  <paper>
+    <title>'Telling a different tale': literary, historical and meteorological readings of a Norfolk heatwave</title>
+    <DOI>10.1007/s10584-012-0400-1</DOI>
+    <UT>WOS:000305027000002</UT>
+    <order>41</order>
+    <author>Hulme, Mike</author>
+  </paper>
+  <paper>
+    <title>Transcription maximized; expense minimized? Crowdsourcing and editing The Collected Works of Jeremy Bentham</title>
+    <DOI>10.1093/llc/fqs004</DOI>
+    <UT>WOS:000304199900001</UT>
+    <order>42</order>
+    <author>Causer, Tim</author>
+    <author>Tonra, Justin</author>
+    <author>Wallace, Valerie</author>
+  </paper>
+  <paper>
+    <title>Santini memorial lecture: Space Challenges and Opportunities for Human Benefit</title>
+    <DOI>10.1016/j.actaastro.2012.01.009</DOI>
+    <UT>WOS:000302984900006</UT>
+    <order>43</order>
+    <author>Yarymovych, Michael I.</author>
+  </paper>
+  <paper>
+    <title>Social Implications of Technology: The Past, the Present, and the Future</title>
+    <DOI>10.1109/JPROC.2012.2189919</DOI>
+    <UT>WOS:000309838000059</UT>
+    <order>44</order>
+    <author>Stephan, Karl D.</author>
+    <author>Michael, Katina</author>
+    <author>Michael, M. G.</author>
+    <author>Jacob, Laura</author>
+    <author>Anesta, Emily P.</author>
+  </paper>
+  <paper>
+    <title>'Anonymity is the Essence': in Search of Adolphe Appia</title>
+    <DOI>10.1017/S0266464X12000243</DOI>
+    <UT>WOS:000304055000004</UT>
+    <order>45</order>
+    <author>Beacham, Richard</author>
+  </paper>
+  <paper>
+    <title>Optimal Workflow Scheduling in Critical Infrastructure Systems with Neural Networks</title>
+    <DOI/>
+    <UT>WOS:000303489600004</UT>
+    <order>46</order>
+    <author>Vukmirovic, S.</author>
+    <author>Erdeljan, A.</author>
+    <author>Imre, L.</author>
+    <author>Capko, D.</author>
+  </paper>
+  <paper>
+    <title>The liberty of invention: alchemical discourse and information technology standardization</title>
+    <DOI>10.1093/llc/fqr038</DOI>
+    <UT>WOS:000301985600006</UT>
+    <order>47</order>
+    <author>Walsh, John A.</author>
+    <author>Hooper, Wallace Edd</author>
+  </paper>
+  <paper>
+    <title>A Small World of Citations? The Influence of Collaboration Networks on Citation Practices</title>
+    <DOI>10.1371/journal.pone.0033339</DOI>
+    <UT>WOS:000303060800092</UT>
+    <order>48</order>
+    <author>Wallace, Matthew L.</author>
+    <author>Lariviere, Vincent</author>
+    <author>Gingras, Yves</author>
+  </paper>
+  <paper>
+    <title>Interpreting Digital Images Beyond Just the Visual: Crossmodal Practices in Medieval Musicology</title>
+    <DOI>10.1179/0308018812Z.0000000005</DOI>
+    <UT>WOS:000304255000006</UT>
+    <order>49</order>
+    <author>Eden, Grace</author>
+    <author>Jirotka, Marina</author>
+    <author>Meyer, Eric T.</author>
+  </paper>
+  <paper>
+    <title>Challenges for the creation of digital resources in the humanities </title>
+    <DOI>10.3145/epi.2012.mar.09</DOI>
+    <UT>WOS:000302851700009</UT>
+    <order>50</order>
+    <author>Galina-Russell, Isabel</author>
+  </paper>
+  <paper>
+    <title>Phonics training for English-speaking poor readers</title>
+    <DOI>10.1002/14651858.CD009115.pub2</DOI>
+    <UT>WOS:000312255900002</UT>
+    <order>51</order>
+    <author>McArthur, Genevieve</author>
+    <author>Eve, Philippa M.</author>
+    <author>Jones, Kristy</author>
+    <author>Banales, Erin</author>
+    <author>Kohnen, Saskia</author>
+    <author>Anandakumar, Thushara</author>
+    <author>Larsen, Linda</author>
+    <author>Marinus, Eva</author>
+    <author>Wang, Hua-Chen</author>
+    <author>Castles, Anne</author>
+  </paper>
+  <paper>
+    <title>Networked library services in a research-intensive university</title>
+    <DOI>10.1108/02640471211282145</DOI>
+    <UT>WOS:000312756500007</UT>
+    <order>52</order>
+    <author>Taha, Ahmed</author>
+  </paper>
+  <paper>
+    <title>OUT OF FIELD the future of film studies</title>
+    <DOI>10.1080/0969725X.2012.747333</DOI>
+    <UT>WOS:000312586200008</UT>
+    <order>53</order>
+    <author>Flaxman, Gregory</author>
+  </paper>
+  <paper>
+    <title>When the Present Web is Later the Past: Web Historiography, Digital History, and Internet Studies</title>
+    <DOI/>
+    <UT>WOS:000311972500010</UT>
+    <order>54</order>
+    <author>Brugger, Niels</author>
+  </paper>
+  <paper>
+    <title>Measuring the web impact of digitised scholarly resources</title>
+    <DOI>10.1108/00220411211239084</DOI>
+    <UT>WOS:000308836300005</UT>
+    <order>55</order>
+    <author>Eccles, Kathryn E.</author>
+    <author>Thelwall, Mike</author>
+    <author>Meyer, Eric T.</author>
+  </paper>
+  <paper>
+    <title>Controversies around the Digital Humanities : An Agenda</title>
+    <DOI/>
+    <UT>WOS:000306574100001</UT>
+    <order>56</order>
+    <author>Thaller, Manfred</author>
+  </paper>
+  <paper>
+    <title>The Residue of Uniqueness</title>
+    <DOI/>
+    <UT>WOS:000306574100002</UT>
+    <order>57</order>
+    <author>McCarty, Willard</author>
+  </paper>
+  <paper>
+    <title> Digital Humanities : Centres and Peripheries</title>
+    <DOI/>
+    <UT>WOS:000306574100003</UT>
+    <order>58</order>
+    <author>Schreibman, Susan</author>
+  </paper>
+  <paper>
+    <title>Towards a Cultural Critique of the Digital Humanities </title>
+    <DOI/>
+    <UT>WOS:000306574100004</UT>
+    <order>59</order>
+    <author>Fiormonte, Domenico</author>
+  </paper>
+  <paper>
+    <title>DH is Us or on the Unbearable Lightness of a Shared Methodology</title>
+    <DOI/>
+    <UT>WOS:000306574100005</UT>
+    <order>60</order>
+    <author>Meister, Jan Christoph</author>
+  </paper>
+  <paper>
+    <title>Core or Periphery? Digital Humanities from an Archaeological Perspective</title>
+    <DOI/>
+    <UT>WOS:000306574100006</UT>
+    <order>61</order>
+    <author>Huggett, Jeremy</author>
+  </paper>
+  <paper>
+    <title>The Role of Markup in the Digital Humanities </title>
+    <DOI/>
+    <UT>WOS:000306574100008</UT>
+    <order>62</order>
+    <author>Schmidt, Desmond</author>
+  </paper>
+  <paper>
+    <title>Taking the Long View: From e-Science Humanities to Humanities Digital Ecosystems</title>
+    <DOI/>
+    <UT>WOS:000306574100009</UT>
+    <order>63</order>
+    <author>Anderson, Sheila</author>
+    <author>Blanke, Tobias</author>
+  </paper>
+  <paper>
+    <title>If You Build It, Will We Come? Large Scale Digital Infrastructures as a Dead End for Digital Humanities </title>
+    <DOI/>
+    <UT>WOS:000306574100010</UT>
+    <order>64</order>
+    <author>van Zundert, Joris</author>
+  </paper>
+  <paper>
+    <title>Placing the Horse before the Cart: Conceptual and Technical Dimensions of Digital Curation</title>
+    <DOI/>
+    <UT>WOS:000306574100011</UT>
+    <order>65</order>
+    <author>Tibbo, Helen R.</author>
+  </paper>
+  <paper>
+    <title>Long-Term Digital Preservation: A Digital Humanities Topic?</title>
+    <DOI/>
+    <UT>WOS:000306574100012</UT>
+    <order>66</order>
+    <author>Gladney, Henry M.</author>
+  </paper>
+  <paper>
+    <title>Domesticating the Universe</title>
+    <DOI>10.1080/14626268.2012.664822</DOI>
+    <UT>WOS:000306319600003</UT>
+    <order>67</order>
+    <author>McConville, David</author>
+  </paper>
+  <paper>
+    <title>Obama and the 'Arab Spring': desire, hope and the manufacture of disappointment. Implications for a transformative pedagogy</title>
+    <DOI>10.1080/01596306.2012.681898</DOI>
+    <UT>WOS:000305915000005</UT>
+    <order>68</order>
+    <author>Roberts, Lorna</author>
+    <author>Schostak, John</author>
+  </paper>
+  <paper>
+    <title>Podcasting the Past: Africa Past and Present and (South) African History in the Digital Age</title>
+    <DOI>10.1080/02582473.2011.640344</DOI>
+    <UT>WOS:000305552700004</UT>
+    <order>69</order>
+    <author>Alegi, Peter</author>
+  </paper>
+  <paper>
+    <title>Crisis interventions for people with borderline personality disorder</title>
+    <DOI>10.1002/14651858.CD009353.pub2</DOI>
+    <UT>WOS:000305192500040</UT>
+    <order>70</order>
+    <author>Borschmann, R.</author>
+    <author>Henderson, C.</author>
+    <author>Hogg, J.</author>
+    <author>Phillips, R.</author>
+    <author>Moran, P.</author>
+  </paper>
+  <paper>
+    <title>For the Pet Care Appliance of Location Aware Infrastructure on Cyber Physical System</title>
+    <DOI>10.1155/2012/421259</DOI>
+    <UT>WOS:000305648200001</UT>
+    <order>71</order>
+    <author>Own, Chung-Ming</author>
+  </paper>
+  <paper>
+    <title>How to Measure the World's Technological Capacity to Communicate, Store, and Compute Information Part II: Measurement Unit and Conclusions</title>
+    <DOI/>
+    <UT>WOS:000303603200004</UT>
+    <order>72</order>
+    <author>Hilbert, Martin</author>
+    <author>Lopez, Priscila</author>
+  </paper>
+  <paper>
+    <title>How to Measure the World's Technological Capacity to Communicate, Store, and Compute Information Part I: Results and Scope</title>
+    <DOI/>
+    <UT>WOS:000303603200005</UT>
+    <order>73</order>
+    <author>Hilbert, Martin</author>
+    <author>Lopez, Priscila</author>
+  </paper>
+  <paper>
+    <title>Use and understand: the inclusion of services against texts in library catalogs and "discovery systems"</title>
+    <DOI>10.1108/07378831211213201</DOI>
+    <UT>WOS:000302766100003</UT>
+    <order>74</order>
+    <author>Morgan, Eric Lease</author>
+  </paper>
+  <paper>
+    <title>Visual Interface Design for Digital Cultural Heritage: A Guide to Rich-prospect Browsing</title>
+    <DOI>10.1108/02640471211204150</DOI>
+    <UT>WOS:000302112500013</UT>
+    <order>75</order>
+    <author>Sanderson, Kay</author>
+  </paper>
+  <paper>
+    <title>The emerging political economy of Humanity 2.0</title>
+    <DOI>10.1080/13511610.2012.660408</DOI>
+    <UT>WOS:000301790900008</UT>
+    <order>76</order>
+    <author>Fuller, Steve</author>
+  </paper>
+  <paper>
+    <title>Finding support for disruption: developing a digital humanities project in Mexico</title>
+    <DOI>10.1108/00012531211196738</DOI>
+    <UT>WOS:000299980600007</UT>
+    <order>77</order>
+    <author>Priani Saiso, Ernesto</author>
+  </paper>
+  <paper>
+    <title>GAP: A NEOGEO APPROACH TO CLASSICAL RESOURCES</title>
+    <DOI/>
+    <UT>WOS:000299864900021</UT>
+    <order>78</order>
+    <author>Isaksen, Leif</author>
+    <author>Barker, Elton</author>
+    <author>Kansa, Eric C.</author>
+    <author>Byrne, Kate</author>
+  </paper>
+  <paper>
+    <title>It Was All about Me: Making History Relevant</title>
+    <DOI>10.3138/chr.92.4.694</DOI>
+    <UT>WOS:000298439900005</UT>
+    <order>79</order>
+    <author>Conrad, Margaret</author>
+  </paper>
+  <paper>
+    <title> Digital learning, digital scholarship and design thinking</title>
+    <DOI>10.1016/j.destud.2011.07.005</DOI>
+    <UT>WOS:000298903900004</UT>
+    <order>80</order>
+    <author>Burdick, Anne</author>
+    <author>Willis, Holly</author>
+  </paper>
+  <paper>
+    <title>Frontal Sinus Agenesis Using Computed Tomography</title>
+    <DOI>10.1097/SCS.0b013e318231e26c</DOI>
+    <UT>WOS:000297741900018</UT>
+    <order>81</order>
+    <author>Danesh-Sani, Seyed Amir</author>
+    <author>Bavandi, Reza</author>
+    <author>Esmaili, Maryam</author>
+  </paper>
+  <paper>
+    <title>Computer Mapping of Geography and Border Crossing in Scandinavia</title>
+    <DOI/>
+    <UT>WOS:000301283300003</UT>
+    <order>82</order>
+    <author>Eide, Oyvind</author>
+  </paper>
+  <paper>
+    <title> Digital Humanities in Developed and Emerging Markets</title>
+    <DOI/>
+    <UT>WOS:000301283300005</UT>
+    <order>83</order>
+    <author>Laschinger, Verena</author>
+  </paper>
+  <paper>
+    <title>Learning to Read Data: Bringing out the Humanistic in the Digital Humanities </title>
+    <DOI/>
+    <UT>WOS:000301558800006</UT>
+    <order>84</order>
+    <author>Heuser, Ryan</author>
+    <author>Le-Khac, Long</author>
+  </paper>
+  <paper>
+    <title> Humanities 2.0: E-Learning in the Digital World E-Learning and the Public University: Access and Affordability 2.0</title>
+    <DOI>10.1525/rep.2011.116.1.102</DOI>
+    <UT>WOS:000300561700006</UT>
+    <order>85</order>
+    <author>Guerlac, Suzanne</author>
+  </paper>
+  <paper>
+    <title>Present, not voting: Digital Humanities in the Panopticon: closing plenary speech, Digital Humanities 2010</title>
+    <DOI>10.1093/llc/fqr016</DOI>
+    <UT>WOS:000294122100003</UT>
+    <order>86</order>
+    <author>Terras, Melissa</author>
+  </paper>
+  <paper>
+    <title>The benefits and limits of computerization in conflict simulation</title>
+    <DOI>10.1093/llc/fqr024</DOI>
+    <UT>WOS:000294122100009</UT>
+    <order>87</order>
+    <author>Sabin, Philip</author>
+  </paper>
+  <paper>
+    <title>A tale of two cities: implications of the similarities and differences in collaborative approaches within the digital libraries and digital humanities communities</title>
+    <DOI>10.1093/llc/fqr028</DOI>
+    <UT>WOS:000294122100011</UT>
+    <order>88</order>
+    <author>Siemens, Lynne</author>
+    <author>Cunningham, Richard</author>
+    <author>Duff, Wendy</author>
+    <author>Warwick, Claire</author>
+  </paper>
+  <paper>
+    <title>Text encoding and ontology-enlarging an ontology by semi-automatic generated instances</title>
+    <DOI>10.1093/llc/fqr021</DOI>
+    <UT>WOS:000294122100014</UT>
+    <order>89</order>
+    <author>Zollner-Weber, Amelie</author>
+  </paper>
+  <paper>
+    <title>From encyclopedia to ontology: toward dynamic representation of the discipline of philosophy</title>
+    <DOI>10.1007/s11229-009-9659-9</DOI>
+    <UT>WOS:000294055300003</UT>
+    <order>90</order>
+    <author>Buckner, Cameron</author>
+    <author>Niepert, Mathias</author>
+    <author>Allen, Colin</author>
+  </paper>
+  <paper>
+    <title>Social Sciences and Humanities Publishing and the Digital 'Revolution'</title>
+    <DOI>10.1017/S1062798711000032</DOI>
+    <UT>WOS:000312875800009</UT>
+    <order>91</order>
+    <author>Kempf, Jean</author>
+  </paper>
+  <paper>
+    <title>A clustering study of a 7000 EU document inventory using MDS and SOM</title>
+    <DOI>10.1016/j.eswa.2011.01.094</DOI>
+    <UT>WOS:000289047700102</UT>
+    <order>92</order>
+    <author>De Maziere, Patrick A.</author>
+    <author>Van Hulle, Marc M.</author>
+  </paper>
+  <paper>
+    <title>Introduction to the Special Section on Digital Objects: digital objects, digital humanities -Questions, Processes, and Outputs</title>
+    <DOI>10.1093/llc/fqr008</DOI>
+    <UT>WOS:000291063000004</UT>
+    <order>93</order>
+    <author>Dunn, Stuart</author>
+  </paper>
+  <paper>
+    <title>Well Connected to Your Digital Object? E-Curator: A Web-based e-Science Platform for Museum Artefacts</title>
+    <DOI>10.1093/llc/fqr006</DOI>
+    <UT>WOS:000291063000005</UT>
+    <order>94</order>
+    <author>Hess, Mona</author>
+    <author>Millar, Francesca Simon</author>
+    <author>Robson, Stuart</author>
+    <author>MacDonald, Sally</author>
+    <author>Were, Graeme</author>
+    <author>Brown, Ian</author>
+  </paper>
+  <paper>
+    <title>Getting beyond the common denominator</title>
+    <DOI>10.1093/llc/fqr007</DOI>
+    <UT>WOS:000291063000006</UT>
+    <order>95</order>
+    <author>Hunt, Leta</author>
+    <author>Lundberg, Marilyn</author>
+    <author>Zuckerman, Bruce</author>
+  </paper>
+  <paper>
+    <title>Wisconsin Folks Digitizing Culture for the Public Good</title>
+    <DOI/>
+    <UT>WOS:000305050100004</UT>
+    <order>96</order>
+    <author>Pryor, Anne</author>
+  </paper>
+  <paper>
+    <title>Satisfaction of the user of the Capes Portal of Scientific Journals: a study on the success in the use of the system</title>
+    <DOI/>
+    <UT>WOS:000300352000006</UT>
+    <order>97</order>
+    <author>Cendon, Beatriz Valadares</author>
+    <author>de Almeida Souza, Juliana Lopes</author>
+    <author>Ribeiro, Nadia Ameno</author>
+  </paper>
+  <paper>
+    <title>CARL PHILIPP EMANUEL BACH: THE COMPLETE WORKS</title>
+    <DOI/>
+    <UT>WOS:000294888300002</UT>
+    <order>98</order>
+    <author>Buch, Laura</author>
+    <author>Corneilson, Paul</author>
+    <author>Grant, Jason B.</author>
+    <author>Knoll, Mark W.</author>
+  </paper>
+  <paper>
+    <title>Evolution of the University of Minnesota Libraries' approach to e-scholarship</title>
+    <DOI/>
+    <UT/>
+    <order>99</order>
+    <author>Lafferty, Meghan</author>
+    <author>Johnston, Lisa</author>
+  </paper>
+  <paper>
+    <title>' ... Our Fate as a Living Corpse ... ' An Interview with Boris Groys</title>
+    <DOI>10.1177/0263276410396909</DOI>
+    <UT>WOS:000289725200003</UT>
+    <order>100</order>
+    <author>Abdullah, Hannah</author>
+    <author>Benzer, Matthias</author>
+  </paper>
+  <paper>
+    <title>PUBLISHING BIOETHICS AND BIOETHICS- REFLECTIONS ON ACADEMIC PUBLISHING BY A JOURNAL EDITOR</title>
+    <DOI>10.1111/j.1467-8519.2010.01878.x</DOI>
+    <UT>WOS:000285762400002</UT>
+    <order>101</order>
+    <author>Schueklenk, Udo</author>
+  </paper>
+  <paper>
+    <title> Digital Humanities in America Introduction</title>
+    <DOI/>
+    <UT>WOS:000302047800001</UT>
+    <order>102</order>
+    <author>Abrioux, Yves</author>
+  </paper>
+  <paper>
+    <title>The h-index, h-core citation rate and the bibliometric profile of the Scopus database</title>
+    <DOI>10.1108/14684521111151487</DOI>
+    <UT>WOS:000293929700009</UT>
+    <order>103</order>
+    <author>Jacso, Peter</author>
+  </paper>
+  <paper>
+    <title>Topic Maps from a Knowledge Organization Perspective</title>
+    <DOI/>
+    <UT>WOS:000293563900006</UT>
+    <order>104</order>
+    <author>Melgar Estrada, Liliana M.</author>
+  </paper>
+  <paper>
+    <title>A genealogy of digital humanities </title>
+    <DOI>10.1108/00220411111124550</DOI>
+    <UT>WOS:000291373700006</UT>
+    <order>105</order>
+    <author>Dalbello, Marija</author>
+  </paper>
+  <paper>
+    <title>"IN MOZART'S WORDS": PERSPECTIVES ON A NEW, ONLINE EDITION OF THE MOZART FAMILY LETTERS FROM ITALY, 1770-1773</title>
+    <DOI/>
+    <UT>WOS:000290980000001</UT>
+    <order>106</order>
+    <author>Eisen, Cliff</author>
+  </paper>
+  <paper>
+    <title>Enabled backchannel: conference Twitter use by digital humanists</title>
+    <DOI>10.1108/00220411111109449</DOI>
+    <UT>WOS:000289019500002</UT>
+    <order>107</order>
+    <author>Ross, C.</author>
+    <author>Terras, M.</author>
+    <author>Warwick, C.</author>
+    <author>Welsh, A.</author>
+  </paper>
+  <paper>
+    <title>Welcome to the 1st Congress of the International Academy of Digital Pathology Introduction</title>
+    <DOI>10.3233/ACP-2011-0022</DOI>
+    <UT/>
+    <order>108</order>
+    <author>Yagi, Yukako</author>
+    <author>Rojo, Marcial</author>
+  </paper>
+  <paper>
+    <title>History blogs: their uses and possibilities</title>
+    <DOI/>
+    <UT>WOS:000289381000004</UT>
+    <order>109</order>
+    <author>Quiroga, Nicolas</author>
+  </paper>
+  <paper>
+    <title>A framework for contextual information in digital collections</title>
+    <DOI>10.1108/00220411111105470</DOI>
+    <UT>WOS:000287910400006</UT>
+    <order>110</order>
+    <author>Cal</author>
+  </paper>
+  <paper>
+    <title>How can educational technology facilitate student engagement with online primary sources? A user needs assessment</title>
+    <DOI>10.1108/07378831111138152</DOI>
+    <UT>WOS:000292857700003</UT>
+    <order>111</order>
+    <author>Lindquist, Thea</author>
+    <author>Long, Holley</author>
+  </paper>
+  <paper>
+    <title>Art Practice in a Digital Culture</title>
+    <DOI>10.1108/14684521111113641</DOI>
+    <UT>WOS:000288877000010</UT>
+    <order>112</order>
+    <author>Note, Margot</author>
+  </paper>
+  <paper>
+    <title>Literary Education and Digital Learning: Methods and Technologies for Humanities Studies</title>
+    <DOI>10.1108/14684521111113678</DOI>
+    <UT>WOS:000288877000013</UT>
+    <order>113</order>
+    <author>Fourie, Ina</author>
+  </paper>
+  <paper>
+    <title>Mapping the English Lake District: a literary GIS</title>
+    <DOI>10.1111/j.1475-5661.2010.00405.x</DOI>
+    <UT>WOS:000284904600007</UT>
+    <order>114</order>
+    <author>Cooper, David</author>
+    <author>Gregory, Ian N.</author>
+  </paper>
+  <paper>
+    <title>Modern Models of Developments of Humanitarian Sciences in the Digital Environment</title>
+    <DOI/>
+    <UT>WOS:000292352000008</UT>
+    <order>115</order>
+    <author>Zhuravleva, E. Yu.</author>
+  </paper>
+  <paper>
+    <title>The Structure of the EU Mediasphere</title>
+    <DOI>10.1371/journal.pone.0014243</DOI>
+    <UT>WOS:000285084100001</UT>
+    <order>116</order>
+    <author>Flaounas, Ilias</author>
+    <author>Turchi, Marco</author>
+    <author>Ali, Omar</author>
+    <author>Fyson, Nick</author>
+    <author>De Bie, Tijl</author>
+    <author>Mosdell, Nick</author>
+    <author>Lewis, Justin</author>
+    <author>Cristianini, Nello</author>
+  </paper>
+  <paper>
+    <title>Special Issue 'Papers from Digital Humanities 2009, University of Maryland, USA' Introduction</title>
+    <DOI>10.1093/llc/fqq023</DOI>
+    <UT/>
+    <order>117</order>
+    <author>Warwick, Claire</author>
+    <author>Singer, Katherine</author>
+  </paper>
+  <paper>
+    <title>Appropriate Use Case modeling for humanities documents</title>
+    <DOI>10.1093/llc/fqq026</DOI>
+    <UT>WOS:000285641500003</UT>
+    <order>118</order>
+    <author>Teehan, Aja</author>
+    <author>Keating, John G.</author>
+  </paper>
+  <paper>
+    <title>Library collaboration with large digital humanities projects</title>
+    <DOI>10.1093/llc/fqq022</DOI>
+    <UT>WOS:000285641500007</UT>
+    <order>119</order>
+    <author>Kretzschmar, William A., Jr.</author>
+    <author>Potter, William Gray</author>
+  </paper>
+  <paper>
+    <title>Providing universal access to Japanese humanities digital libraries: an approach to federated searching system using automatic metadata mapping</title>
+    <DOI>10.1631/jzus.C1001001</DOI>
+    <UT>WOS:000285586900002</UT>
+    <order>120</order>
+    <author>Batjargal, Biligsaikhan</author>
+    <author>Kimura, Fuminori</author>
+    <author>Maeda, Akira</author>
+  </paper>
+  <paper>
+    <title>Rewriting Moby-Dick: Politics, Textual Identity, and the Revision Narrative</title>
+    <DOI/>
+    <UT>WOS:000282800800018</UT>
+    <order>121</order>
+    <author>Bryant, John</author>
+  </paper>
+  <paper>
+    <title>Disciplining Digital Humanities , 2010: Shakespeare's Staging, XMAS, Shakespeare Performance in Asia, Shakespeare Quartos Archive, and BardBox</title>
+    <DOI/>
+    <UT>WOS:000284186900006</UT>
+    <order>122</order>
+    <author>Trettien, Whitney Anne</author>
+  </paper>
+  <paper>
+    <title>Canadian Historical Research and Pedagogy: A View from the Perspective of the Canadian Century Research Infrastructure</title>
+    <DOI>10.3138/chr.91.3.533</DOI>
+    <UT>WOS:000282390800005</UT>
+    <order>123</order>
+    <author>Sager, Eric W.</author>
+    <author>Baskerville, Peter Allan</author>
+  </paper>
+  <paper>
+    <title>Information-Seeking Behavior in the Digital Age: A Multidisciplinary Study of Academic Researchers</title>
+    <DOI/>
+    <UT>WOS:000282379200004</UT>
+    <order>124</order>
+    <author>Ge, Xuemei</author>
+  </paper>
+  <paper>
+    <title> Digital documentation of oral discourse genres</title>
+    <DOI>10.1093/llc/fqq008</DOI>
+    <UT>WOS:000284758900004</UT>
+    <order>125</order>
+    <author>Mason, Catharine</author>
+  </paper>
+  <paper>
+    <title>Building together digital archives for research in social sciences and humanities </title>
+    <DOI>10.1177/0539018410371570</DOI>
+    <UT>WOS:000281148900005</UT>
+    <order>126</order>
+    <author>Habert, Benoit</author>
+    <author>Huc, Claude</author>
+  </paper>
+  <paper>
+    <title>Methodological commons: arts and humanities e-Science fundamentals</title>
+    <DOI>10.1098/rsta.2010.0156</DOI>
+    <UT>WOS:000279990200003</UT>
+    <order>127</order>
+    <author>Anderson, Sheila</author>
+    <author>Blanke, Tobias</author>
+    <author>Dunn, Stuart</author>
+  </paper>
+  <paper>
+    <title>Deploying general-purpose virtual research environments for humanities research</title>
+    <DOI>10.1098/rsta.2010.0167</DOI>
+    <UT>WOS:000279990200005</UT>
+    <order>128</order>
+    <author>Blanke, Tobias</author>
+    <author>Candela, Leonardo</author>
+    <author>Hedges, Mark</author>
+    <author>Priddy, Mike</author>
+    <author>Simeoni, Fabio</author>
+  </paper>
+  <paper>
+    <title>Transforming Scholarly Practice: Embedding Technological Interventions to Support the Collaborative Analysis of Ancient Texts</title>
+    <DOI>10.1007/s10606-010-9111-1</DOI>
+    <UT>WOS:000282318300004</UT>
+    <order>129</order>
+    <author>de la Flor, Grace</author>
+    <author>Jirotka, Marina</author>
+    <author>Luff, Paul</author>
+    <author>Pybus, John</author>
+    <author>Kirkham, Ruth</author>
+  </paper>
+  <paper>
+    <title>Towards Visual Intellectuality: The Mediawork Pamphlet Series (An Interview by Elizabeth Guffey and Raiford Guins, Part 1)</title>
+    <DOI>10.1177/1470412910372759</DOI>
+    <UT>WOS:000281554300001</UT>
+    <order>130</order>
+    <author>Lunenfeld, Peter</author>
+  </paper>
+  <paper>
+    <title>Living the Digital Revolution - Explorations into the Futures of the European Society</title>
+    <DOI>10.1017/S1062798710000098</DOI>
+    <UT>WOS:000208582300009</UT>
+    <order>131</order>
+    <author>Arnaldi, Simone</author>
+    <author>Boscolo, Francesca</author>
+    <author>Stamm, Julia</author>
+  </paper>
+  <paper>
+    <title>Is it worth establishing institutional repositories? The strategies for open access to Spanish peer-reviewed articles</title>
+    <DOI>10.1087/20100303</DOI>
+    <UT>WOS:000287623000003</UT>
+    <order>132</order>
+    <author>Rodriguez-Armentia, Nerea</author>
+    <author>Amat, Carlos B.</author>
+  </paper>
+  <paper>
+    <title> DIGITAL HUMANITIES IN SPANISH?</title>
+    <DOI/>
+    <UT/>
+    <order>133</order>
+    <author>Suarez, J. L.</author>
+  </paper>
+  <paper>
+    <title>Maps on the Basis of the Arts &amp;amp; Humanities Citation Index: The Journals Leonardo and Art Journal Versus "Digital Humanities " as a Topic</title>
+    <DOI>10.1002/asi.21303</DOI>
+    <UT>WOS:000276370500011</UT>
+    <order>134</order>
+    <author>Leydesdorff, Loet</author>
+    <author>Salah, Alkim Almila Akdag</author>
+  </paper>
+  <paper>
+    <title>Knowledge discovery for the linguistic atlas of sicily project</title>
+    <DOI/>
+    <UT>WOS:000279570400008</UT>
+    <order>135</order>
+    <author>Russo, Giuseppe</author>
+    <author>Gentile, Antonio</author>
+    <author>Pirrone, Roberto</author>
+  </paper>
+  <paper>
+    <title>Baltasar Llopis Minguez (1934-1990). A pioneer in research on bladder cancer and introduction of computing in Urology</title>
+    <DOI/>
+    <UT>WOS:000290355600005</UT>
+    <order>136</order>
+    <author>Perez Albacete, M.</author>
+    <author>Vera Donoso, C. D.</author>
+    <author>Lopez Gonzalez, P. A.</author>
+    <author>Ruiz Cerda, J. L.</author>
+  </paper>
+  <paper>
+    <title>The Embryo Project: An Integrated Approach to History, Practices, and Social Contexts of Embryo Research</title>
+    <DOI>10.1007/s10739-009-9204-1</DOI>
+    <UT>WOS:000274319100001</UT>
+    <order>137</order>
+    <author>Maienschein, Jane</author>
+    <author>Laubichler, Manfred D.</author>
+  </paper>
+  <paper>
+    <title>Faceted classification for museum artefacts A methodology to support web site development of large cultural organizations</title>
+    <DOI>10.1108/00012531011074753</DOI>
+    <UT>WOS:000282798400015</UT>
+    <order>138</order>
+    <author>Menard, Elaine</author>
+    <author>Mas, Sabine</author>
+    <author>Alberts, Inge</author>
+  </paper>
+  <paper>
+    <title>All the world's a brothel: metaphysics of the text and cultural economy in the information age</title>
+    <DOI>10.1080/02560040903509200</DOI>
+    <UT>WOS:000290543300003</UT>
+    <order>139</order>
+    <author>Tomaselli, Keyan G.</author>
+    <author>Shepperson, Arnold</author>
+  </paper>
+  <paper>
+    <title>Virtual history: a socially networked pedagogy of enlightenment</title>
+    <DOI>10.1080/00131881.2010.504065</DOI>
+    <UT>WOS:000281030600005</UT>
+    <order>140</order>
+    <author>Ellison, Katherine</author>
+    <author>Matthews, Carol</author>
+  </paper>
+  <paper>
+    <title>Communication and New Literacies in the multicultural world</title>
+    <DOI/>
+    <UT>WOS:000285377400001</UT>
+    <order>141</order>
+    <author>Varis, Tapio</author>
+  </paper>
+  <paper>
+    <title>THE SCHOOL LIBRARY IN THE READERS-AUTHORS COMMUNITY FORMATION VIA WEB</title>
+    <DOI/>
+    <UT>WOS:000277737000002</UT>
+    <order>142</order>
+    <author>Furtado, Cassia Cordeiro</author>
+    <author>Oliveira, Lidia</author>
+  </paper>
+  <paper>
+    <title>The way we are now</title>
+    <DOI>10.1080/02614360903267021</DOI>
+    <UT>WOS:000275323900007</UT>
+    <order>143</order>
+    <author>Haworth, John</author>
+  </paper>
+  <paper>
+    <title>An investigation of digital scholarship and disciplinary culture in Oman</title>
+    <DOI>10.1108/07378831011076666</DOI>
+    <UT>WOS:000283037100007</UT>
+    <order>144</order>
+    <author>Al-Aufi, Ali</author>
+    <author>Genoni, Paul</author>
+  </paper>
+  <paper>
+    <title>Working Together or Apart? Promoting the Next Generation of Digital Scholarship: Report of a Workshop Co-sponsored by the Council on Library and Information Resources and National Endowment for the Humanities </title>
+    <DOI>10.1108/07378831011096367</DOI>
+    <UT>WOS:000288300900019</UT>
+    <order>145</order>
+    <author>Mutula, Stephen M.</author>
+  </paper>
+  <paper>
+    <title>Use of digital libraries of scientific journals: a comparison of the use of the Portal Capes in different domains of knowledge</title>
+    <DOI>10.1590/S1413-99362010000100005</DOI>
+    <UT>WOS:000282886200005</UT>
+    <order>146</order>
+    <author>Lara Cunha, Adriana Aurea</author>
+    <author>Cendon, Beatriz Valadares</author>
+  </paper>
+  <paper>
+    <title>Predicting national sustainability: The convergence of energetic, economic and environmental realities</title>
+    <DOI>10.1016/j.ecolmodel.2009.08.023</DOI>
+    <UT>WOS:000272371300018</UT>
+    <order>147</order>
+    <author>Brown, Mark T.</author>
+    <author>Cohen, Matthew J.</author>
+    <author>Sweeney, Sharlynn</author>
+  </paper>
+  <paper>
+    <title>"The Web of Our Life is of a Mingled Yarn": The Canadian Adaptations of Shakespeare Project, Humanities Scholarship, and ColdFusion</title>
+    <DOI/>
+    <UT>WOS:000262689900007</UT>
+    <order>148</order>
+    <author>Fischlin, Daniel</author>
+    <author>Hadfield, Dorothy</author>
+    <author>Lester, Gordon</author>
+    <author>McCutcheon, Mark A.</author>
+  </paper>
+  <paper>
+    <title>Engaging the humanities : the digital humanities </title>
+    <DOI>10.1162/daed.2009.138.1.99</DOI>
+    <UT>WOS:000262588700010</UT>
+    <order>149</order>
+    <author>O'Donnell, James J.</author>
+  </paper>
+  <paper>
+    <title>The Face of Television</title>
+    <DOI>10.1177/0002716209338571</DOI>
+    <UT>WOS:000268882800007</UT>
+    <order>150</order>
+    <author>Frosh, Paul</author>
+  </paper>
+  <paper>
+    <title>Science is the fuel for the engine of technology and clinical practice</title>
+    <DOI/>
+    <UT>WOS:000269677100004</UT>
+    <order>151</order>
+    <author>Snead, Malcolm L.</author>
+    <author>Slavkin, Harold C.</author>
+  </paper>
+  <paper>
+    <title>TEI documents in the grid</title>
+    <DOI>10.1093/llc/fqp016</DOI>
+    <UT>WOS:000284754800003</UT>
+    <order>152</order>
+    <author>Zielinski, Andrea</author>
+    <author>Pempe, Wolfgang</author>
+    <author>Gietz, Peter</author>
+    <author>Haase, Martin</author>
+    <author>Funk, Stefan</author>
+    <author>Simon, Christian</author>
+  </paper>
+  <paper>
+    <title>Teaching TEI: The Need for TEI by Example</title>
+    <DOI>10.1093/llc/fqp018</DOI>
+    <UT>WOS:000284754800005</UT>
+    <order>153</order>
+    <author>Terras, Melissa</author>
+    <author>Van den Branden, Ron</author>
+    <author>Vanhoutte, Edward</author>
+  </paper>
+  <paper>
+    <title>Revitalizing Computing Education Through Free and Open Source Software for Humanity</title>
+    <DOI>10.1145/1536616.1536635</DOI>
+    <UT>WOS:000268567900027</UT>
+    <order>154</order>
+    <author>Morelli, Ralph</author>
+    <author>Tucker, Allen</author>
+    <author>Danner, Norman</author>
+    <author>De Lanerolle, Trishan R.</author>
+    <author>Ellis, Heidi J. C.</author>
+    <author>Izmirli, Ozgur</author>
+    <author>Krizanc, Danny</author>
+    <author>Parker, Gary</author>
+  </paper>
+  <paper>
+    <title>Google Book Search: Citation Analysis for Social Science and the Humanities </title>
+    <DOI>10.1002/asi.21085</DOI>
+    <UT>WOS:000268350900002</UT>
+    <order>155</order>
+    <author>Kousha, Kayvan</author>
+    <author>Thelwall, Mike</author>
+  </paper>
+  <paper>
+    <title>Virtual worlds - past, present, and future: New directions in social computing </title>
+    <DOI>10.1016/j.dss.2009.02.014</DOI>
+    <UT>WOS:000267627900004</UT>
+    <order>156</order>
+    <author>Messinger, Paul R.</author>
+    <author>Strolulia, Eleni</author>
+    <author>Lyons, Kelly</author>
+    <author>Bone, Michael</author>
+    <author>Niu, Run H.</author>
+    <author>Smirnov, Kristen</author>
+    <author>Perelgut, Stephen</author>
+  </paper>
+  <paper>
+    <title>Special Issue 'Selected papers from Digital Humanities 2008, University of Oulu,Finland,June 25-29' Introduction</title>
+    <DOI>10.1093/llc/fqp013</DOI>
+    <UT/>
+    <order>157</order>
+    <author>Opas-Hanninen, Lisa Lena</author>
+    <author>Ore, Espen S.</author>
+    <author>Warwick, Claire</author>
+  </paper>
+  <paper>
+    <title>Reflecting on a dual publication: Henry III Fine Rolls print and web</title>
+    <DOI>10.1093/llc/fqp007</DOI>
+    <UT>WOS:000284754100002</UT>
+    <order>158</order>
+    <author>Ciula, Arianna</author>
+    <author>Lopez, Tamara</author>
+  </paper>
+  <paper>
+    <title>'It's a team if you use "reply all"': An exploration of research teams in digital humanities environments</title>
+    <DOI>10.1093/llc/fqp009</DOI>
+    <UT>WOS:000284754100010</UT>
+    <order>159</order>
+    <author>Siemens, Lynne</author>
+  </paper>
+  <paper>
+    <title>Arts and humanities e-science-Current practices and future challenges</title>
+    <DOI>10.1016/j.future.2008.10.004</DOI>
+    <UT>WOS:000263251000013</UT>
+    <order>160</order>
+    <author>Blanke, Tobias</author>
+    <author>Hedges, Mark</author>
+    <author>Dunn, Stuart</author>
+  </paper>
+  <paper>
+    <title> DIGITAL HUMANITIES AND ACADEMIC CHANGE</title>
+    <DOI/>
+    <UT>WOS:000269479400003</UT>
+    <order>161</order>
+    <author>Liu, Alan</author>
+  </paper>
+  <paper>
+    <title>Historical Voices of Resistance Crossing Boundaries to Praxis Through Documentary Filmmaking for the Public</title>
+    <DOI/>
+    <UT>WOS:000263933300004</UT>
+    <order>162</order>
+    <author>Kagan, Paula N.</author>
+  </paper>
+  <paper>
+    <title>The role and future of the monograph in arts and humanities research</title>
+    <DOI>10.1108/00012530910932294</DOI>
+    <UT>WOS:000263451200004</UT>
+    <order>163</order>
+    <author>Williams, Peter</author>
+    <author>Stevenson, Lain</author>
+    <author>Nicholas, David</author>
+    <author>Watkinson, Anthony</author>
+    <author>Rowlands, Ian</author>
+  </paper>
+  <paper>
+    <title>A Companion to Digital Humanities </title>
+    <DOI>10.1017/S0009840X0800293X</DOI>
+    <UT>WOS:000263700200150</UT>
+    <order>164</order>
+    <author>Terras, Melissa</author>
+  </paper>
+  <paper>
+    <title>DICOM/JPEG2000 CLIENT/SERVER ARCHITECTURE IMPLEMENTATION</title>
+    <DOI/>
+    <UT/>
+    <order>165</order>
+  </paper>
+  <paper>
+    <title>AN EXAMPLE OF METEOROLOGICAL FIELD FORECAST OBTAINED BY THE SINGLE LEVEL NESTING FOR USE IN ECOLOGICAL MODELLING</title>
+    <DOI/>
+    <UT/>
+    <order>166</order>
+  </paper>
+  <paper>
+    <title>ESTIMATING POTENTIAL EROSION RISKS IN CORLU USING THE GIS-BASED RUSLE METHOD</title>
+    <DOI/>
+    <UT>WOS:000270702400004</UT>
+    <order>167</order>
+    <author>Karaburun, Ahmet</author>
+  </paper>
+  <paper>
+    <title>COPYRIGHT AND INFORMATION AND COMMUNICATION TECHNOLOGIES IN THE CONTEXT OF THE PRODUCTION, USE AND DISSEMINATE OF THE INFORMATION: a look at Creative Commons Licenses</title>
+    <DOI/>
+    <UT>WOS:000276951600004</UT>
+    <order>168</order>
+    <author>Mass Araya, Elizabeth Roxana</author>
+    <author>Borsetti Gregorio Vidotti, Silvana Aparecida</author>
+  </paper>
+  <paper>
+    <title>What is to read? What is reading?</title>
+    <DOI/>
+    <UT>WOS:000267636300007</UT>
+    <order>169</order>
+    <author>Ramirez Leyva, Elsa M.</author>
+  </paper>
+  <paper>
+    <title>Documentation and the users of digital resources in the humanities </title>
+    <DOI>10.1108/00220410910926112</DOI>
+    <UT>WOS:000263619500003</UT>
+    <order>170</order>
+    <author>Warwick, Claire</author>
+    <author>Galina, Isabel</author>
+    <author>Rimmer, Jon</author>
+    <author>Terras, Melissa</author>
+    <author>Blandford, Ann</author>
+    <author>Gow, Jeremy</author>
+    <author>Buchanan, George</author>
+  </paper>
+  <paper>
+    <title>Errors of omission and their implications for computing scientometric measures in evaluating the publishing productivity and impact of countries</title>
+    <DOI>10.1108/14684520910951276</DOI>
+    <UT>WOS:000266183000011</UT>
+    <order>171</order>
+    <author>Jacso, Peter</author>
+  </paper>
+  <paper>
+    <title>Preservation of scientific and cultural heritage in Balkan countries</title>
+    <DOI>10.1108/00330330910998066</DOI>
+    <UT>WOS:000272517200005</UT>
+    <order>172</order>
+    <author>Tonta, Yasar</author>
+  </paper>
+  <paper>
+    <title>On Verite to Virtual: Conversations on the Frontier of Film and Anthropology</title>
+    <DOI>10.1080/14725860903309146</DOI>
+    <UT>WOS:000272200800006</UT>
+    <order>173</order>
+    <author>Coover, Roderick</author>
+  </paper>
+  <paper>
+    <title>The Posthuman Ethos in Cyberpunk Science Fiction</title>
+    <DOI/>
+    <UT>WOS:000207453700009</UT>
+    <order>174</order>
+    <author>Goicoechea, Maria</author>
+  </paper>
+  <paper>
+    <title>Archives of the Dance (21): Siobhan Davies Dance Online</title>
+    <DOI>10.3366/E0264287508000212</DOI>
+    <UT>WOS:000263455000007</UT>
+    <order>175</order>
+    <author>Whatley, Sarah</author>
+  </paper>
+  <paper>
+    <title>Historical gazetteers - An experiential perspective, with examples from Chinese history</title>
+    <DOI>10.3200/HMTS.41.1.39-64</DOI>
+    <UT>WOS:000254691200003</UT>
+    <order>176</order>
+    <author>Mostern, Ruth</author>
+  </paper>
+  <paper>
+    <title>Meaning and mining: the impact of implicit assumptions in data mining for the humanities </title>
+    <DOI>10.1093/llc/fqn019</DOI>
+    <UT>WOS:000207735600002</UT>
+    <order>177</order>
+    <author>Sculley, D.</author>
+    <author>Pasanek, Bradley M.</author>
+  </paper>
+  <paper>
+    <title>Mind Technologies. Humanities Computing and the Canadian Academic Community</title>
+    <DOI>10.1093/llc/fqn027</DOI>
+    <UT>WOS:000207735600009</UT>
+    <order>178</order>
+    <author>Van Raemdonck, Bert</author>
+  </paper>
+  <paper>
+    <title>Mind technologies: Humanities computing and the Canadian academic community</title>
+    <DOI/>
+    <UT>WOS:000255902500012</UT>
+    <order>179</order>
+    <author>McCarty, Willard</author>
+  </paper>
+  <paper>
+    <title>On the Author's Addendum</title>
+    <DOI>10.3138/jsp.40.1.97</DOI>
+    <UT>WOS:000260800600004</UT>
+    <order>180</order>
+    <author>Thatcher, Sanford G.</author>
+  </paper>
+  <paper>
+    <title>Case Study in Data Curation at Johns Hopkins University</title>
+    <DOI/>
+    <UT>WOS:000263994100008</UT>
+    <order>181</order>
+    <author>Choudhury, G. Sayeed</author>
+  </paper>
+  <paper>
+    <title>What's going on?</title>
+    <DOI>10.1093/llc/fqn014</DOI>
+    <UT>WOS:000207735500002</UT>
+    <order>182</order>
+    <author>McCarty, Willard</author>
+  </paper>
+  <paper>
+    <title>Thinking about interpretation: Pliny and scholarship in the humanities </title>
+    <DOI>10.1093/llc/fqn021</DOI>
+    <UT>WOS:000207735500003</UT>
+    <order>183</order>
+    <author>Bradley, John</author>
+  </paper>
+  <paper>
+    <title> Digital visualization as a scholarly activity</title>
+    <DOI>10.1093/llc/fqn016</DOI>
+    <UT>WOS:000207735500004</UT>
+    <order>184</order>
+    <author>Jessop, Martyn</author>
+  </paper>
+  <paper>
+    <title>Expressing complex associations in medieval historical documents: the Henry III Fine Rolls Project</title>
+    <DOI>10.1093/llc/fqn018</DOI>
+    <UT>WOS:000207735500006</UT>
+    <order>185</order>
+    <author>Ciula, Arianna</author>
+    <author>Spence, Paul</author>
+    <author>Vieira, Jose Miguel</author>
+  </paper>
+  <paper>
+    <title>The master builders: LAIRAH research on good practice in the construction of digital humanities projects</title>
+    <DOI>10.1093/llc/fqn017</DOI>
+    <UT>WOS:000207735500010</UT>
+    <order>186</order>
+    <author>Warwick, Claire</author>
+    <author>Galina, Isabel</author>
+    <author>Terras, Melissa</author>
+    <author>Huntington, Paul</author>
+    <author>Pappa, Nikoleta</author>
+  </paper>
+  <paper>
+    <title>The measurement of broadband ultrasonic attenuation in cancellous bone - A review of the science and technology</title>
+    <DOI>10.1109/TUFFC.2008.831</DOI>
+    <UT>WOS:000257386000017</UT>
+    <order>187</order>
+    <author>Langton, Christian M.</author>
+    <author>Njeh, Christopher F.</author>
+  </paper>
+  <paper>
+    <title> Digital Text Collections, Linguistic Research Data, and Mashups: Notes on the Legal Situation</title>
+    <DOI/>
+    <UT>WOS:000260401600007</UT>
+    <order>188</order>
+    <author>Lehmberg, Timm</author>
+    <author>Rehm, Georg</author>
+    <author>Witt, Andreas</author>
+    <author>Zimmermann, Felix</author>
+  </paper>
+  <paper>
+    <title>An examination of the physical and the digital qualities of humanities research</title>
+    <DOI>10.1016/j.ipm.2007.09.001</DOI>
+    <UT>WOS:000255267600023</UT>
+    <order>189</order>
+    <author>Rimmer, Jon</author>
+    <author>Warwick, Claire</author>
+    <author>Blandford, Ann</author>
+    <author>Gow, Jeremy</author>
+    <author>Buchanan, George</author>
+  </paper>
+  <paper>
+    <title>The importance of preserving paper-based artifacts in a digital age</title>
+    <DOI>10.1086/528888</DOI>
+    <UT>WOS:000253774300002</UT>
+    <order>190</order>
+    <author>Bee, Robert</author>
+  </paper>
+  <paper>
+    <title>Selected papers from Digital Humanities 2006, Paris-Sorbonne, 5-9 July 2006 Introduction</title>
+    <DOI>10.1093/llc/fqn007</DOI>
+    <UT/>
+    <order>191</order>
+    <author>Ore, Espen S.</author>
+    <author>Gallet-Blanchard, Liliane</author>
+    <author>Opas-Haenninen, Lisa Lena</author>
+  </paper>
+  <paper>
+    <title>Cross-collection Searching: A Pandora's Box or the Holy Grail?</title>
+    <DOI>10.1093/llc/fqm039</DOI>
+    <UT>WOS:000207735300003</UT>
+    <order>192</order>
+    <author>Schreibman, Susan</author>
+    <author>Roper, Jennifer O'Brien</author>
+    <author>Gueguen, Gretchen</author>
+  </paper>
+  <paper>
+    <title>The Inhibition of Geographical Information in Digital Humanities Scholarship</title>
+    <DOI>10.1093/llc/fqm041</DOI>
+    <UT>WOS:000207735300005</UT>
+    <order>193</order>
+    <author>Jessop, Martyn</author>
+  </paper>
+  <paper>
+    <title>Killer Applications in Digital Humanities </title>
+    <DOI>10.1093/llc/fqm042</DOI>
+    <UT>WOS:000207735300008</UT>
+    <order>194</order>
+    <author>Juola, Patrick</author>
+  </paper>
+  <paper>
+    <title>If You Build It Will They Come? The LAIRAH Study: Quantifying the Use of Online Resources in the Arts and Humanities through Statistical Analysis of User Log Data</title>
+    <DOI>10.1093/llc/fqm045</DOI>
+    <UT>WOS:000207735300009</UT>
+    <order>195</order>
+    <author>Warwick, Claire</author>
+    <author>Terras, Melissa</author>
+    <author>Huntington, Paul</author>
+    <author>Pappa, Nikoleta</author>
+  </paper>
+  <paper>
+    <title> Digital Humanities 2006: When Two Became Many</title>
+    <DOI>10.1093/llc/fqm037</DOI>
+    <UT>WOS:000207735300010</UT>
+    <order>196</order>
+    <author>Archer, Dawn</author>
+  </paper>
+  <paper>
+    <title>Scholarship and disciplinary practices</title>
+    <DOI/>
+    <UT>WOS:000250675500006</UT>
+    <order>197</order>
+    <author>Palmer, Carole L.</author>
+    <author>Cragin, Melissa H.</author>
+  </paper>
+  <paper>
+    <title>The correlates of the digital divide and their impact on college student learning</title>
+    <DOI>10.1016/j.compedu.2006.07.005</DOI>
+    <UT>WOS:000250796900028</UT>
+    <order>198</order>
+    <author>Tien, Flora F.</author>
+    <author>Fu, Tsu-Tan</author>
+  </paper>
+  <paper>
+    <title>A review of the major projects constituting the China Academic Digital Library</title>
+    <DOI>10.1108/02640470810851725</DOI>
+    <UT>WOS:000254142800003</UT>
+    <order>199</order>
+    <author>Shen, Xiangxing</author>
+    <author>Zheng, Zhong</author>
+    <author>Han, Shuguang</author>
+    <author>Shen, Chong</author>
+  </paper>
+  <paper>
+    <title>Understanding the information and communication technology needs of the e-humanist</title>
+    <DOI>10.1108/00220410810844178</DOI>
+    <UT>WOS:000258733400006</UT>
+    <order>200</order>
+    <author>Toms, Elaine G.</author>
+    <author>O'Brien, Heather L.</author>
+  </paper>
+  <paper>
+    <title>Library and information resources and users of digital resources in the humanities </title>
+    <DOI>10.1108/00330330810851555</DOI>
+    <UT>WOS:000254411400001</UT>
+    <order>201</order>
+    <author>Warwick, Claire</author>
+    <author>Terras, Melissa</author>
+    <author>Galina, Isabel</author>
+    <author>Huntington, Paul</author>
+    <author>Pappa, Nikoleta</author>
+  </paper>
+  <paper>
+    <title>Introduction: Reinventing Shakespeare in the digital humanities </title>
+    <DOI>10.1080/17450910802295062</DOI>
+    <UT>WOS:000265722200001</UT>
+    <order>202</order>
+    <author>Galey, Alan</author>
+    <author>Siemens, Ray</author>
+  </paper>
+  <paper>
+    <title>The Shakespeare Electronic Archive: Collections and multimedia tools for teaching and research, 1992-2008</title>
+    <DOI>10.1080/17450910802295104</DOI>
+    <UT>WOS:000265722200004</UT>
+    <order>203</order>
+    <author>Donaldson, Peter S.</author>
+  </paper>
+  <paper>
+    <title>Back to basics: Electronic pedagogy from the (virtual) ground up</title>
+    <DOI>10.1080/17450910802295161</DOI>
+    <UT>WOS:000265722200007</UT>
+    <order>204</order>
+    <author>Ehrlich, Jeremy</author>
+  </paper>
+  <paper>
+    <title>Humanists as information users in the digital age: The case of Jewish studies scholars in Israel</title>
+    <DOI>10.1002/asi.20699</DOI>
+    <UT>WOS:000251377600009</UT>
+    <order>205</order>
+    <author>Baruchson-Arbib, Shifra</author>
+    <author>Bronstein, Jenny</author>
+  </paper>
+  <paper>
+    <title>Natural sciences vs exact sciences: combination of words in scientific vulgarization</title>
+    <DOI/>
+    <UT>WOS:000261303800002</UT>
+    <order>206</order>
+    <author>Blumenthal, Peter</author>
+  </paper>
+  <paper>
+    <title>Mapping humanity's knowledge and expertise in the digital domain</title>
+    <DOI/>
+    <UT/>
+    <order>207</order>
+    <author>Skupin, Andre</author>
+    <author>Borner, Katy</author>
+  </paper>
+  <paper>
+    <title>Quantum game theory and open access publishing</title>
+    <DOI>10.1016/j.physa.2007.04.012</DOI>
+    <UT>WOS:000248198800028</UT>
+    <order>208</order>
+    <author>Hanauske, Matthias</author>
+    <author>Bernius, Steffen</author>
+    <author>Dugall, Berndt</author>
+  </paper>
+  <paper>
+    <title>Rodents (The computer mouse)</title>
+    <DOI>10.1177/1470412907078571</DOI>
+    <UT>WOS:000249077800011</UT>
+    <order>209</order>
+    <author>McCarthy, Anna</author>
+  </paper>
+  <paper>
+    <title>E-Crit: Digital media, critical theory and the humanities </title>
+    <DOI>10.1177/1470412907079299</DOI>
+    <UT>WOS:000249077800012</UT>
+    <order>210</order>
+    <author>Boluk, Stephanie</author>
+  </paper>
+  <paper>
+    <title>E-Crit: Digital media, critical theory, and the humanities </title>
+    <DOI/>
+    <UT>WOS:000250696800012</UT>
+    <order>211</order>
+    <author>Galey, Alan</author>
+  </paper>
+  <paper>
+    <title>A river runs through it: A college-community collaboration for watershed-based regional planning and education</title>
+    <DOI/>
+    <UT>WOS:000248873300008</UT>
+    <order>212</order>
+    <author>Borden, Richard J.</author>
+    <author>Cline, Kenneth S.</author>
+    <author>Hussey, Travis</author>
+    <author>Longsworth, Gordon</author>
+    <author>Mancinelli, Isabel</author>
+  </paper>
+  <paper>
+    <title>On the significance of capitalization: The value of literature with capital L</title>
+    <DOI>10.1007/s11059-007-1008-8</DOI>
+    <UT>WOS:000247081000007</UT>
+    <order>213</order>
+    <author>Nethersole, Reingard</author>
+  </paper>
+  <paper>
+    <title>Sociological engagements with computing : the advent of E-science and some implications for the qualitative research community</title>
+    <DOI/>
+    <UT>WOS:000249324600001</UT>
+    <order>214</order>
+    <author>Hodgson, Susan M.</author>
+    <author>Clark, Tom</author>
+  </paper>
+  <paper>
+    <title>A shifting mosaic of scholarly publishing, scientific delivery, and future impact changing the face of learned societies</title>
+    <DOI>10.1644/06-MAMM-F-418.1</DOI>
+    <UT>WOS:000246284100001</UT>
+    <order>215</order>
+    <author>Leslie, David M., Jr.</author>
+  </paper>
+  <paper>
+    <title>Chronic subdural hematomas - causes of morbidity and mortality</title>
+    <DOI>10.1016/j.surneu.2006.07.022</DOI>
+    <UT>WOS:000245661900009</UT>
+    <order>216</order>
+    <author>Ramachandran, Ramnarayan</author>
+    <author>Hegde, Thimmappa</author>
+  </paper>
+  <paper>
+    <title> Digital media and music editing. A colloquium of the committee of musical editions of the union of German academies of sciences in collaboration with the Centre for electronic methods of publication processing in humanities , University of Trier</title>
+    <DOI/>
+    <UT/>
+    <order>217</order>
+    <author>Gabrielova, Jarmila</author>
+    <author>Kibicova, Tereza</author>
+  </paper>
+  <paper>
+    <title>Social science approaches to e-science: Framing an agenda</title>
+    <DOI/>
+    <UT>WOS:000243717700011</UT>
+    <order>218</order>
+    <author>Schroeder, Ralph</author>
+    <author>Fry, Jenny</author>
+  </paper>
+  <paper>
+    <title>The intellectual and social organization of academic fields and the shaping of digital resources</title>
+    <DOI>10.1177/0165551506068153</DOI>
+    <UT>WOS:000245923200001</UT>
+    <order>219</order>
+    <author>Fry, Jenny</author>
+    <author>Talja, Sanna</author>
+  </paper>
+  <paper>
+    <title> Digital libraries and the challenges of digital humanities </title>
+    <DOI>10.1016/j.lcats.2006.10.007</DOI>
+    <UT>WOS:000251814100009</UT>
+    <order>220</order>
+    <author>Wolfe, Judith A.</author>
+  </paper>
+  <paper>
+    <title>The cultural experience of the sacred through geometry (From the dawn of humanity up to Pythagoras' Arithmosophy)</title>
+    <DOI/>
+    <UT>WOS:000249990600009</UT>
+    <order>221</order>
+    <author>Garcia, Oscar Castro</author>
+  </paper>
+  <paper>
+    <title> Digital libraries and the challenges of digital humanities </title>
+    <DOI>10.1108/00330330710743006</DOI>
+    <UT>WOS:000246237500012</UT>
+    <order>222</order>
+    <author>Paul, Johnson</author>
+  </paper>
+  <paper>
+    <title>Building human-centered systems in the network society</title>
+    <DOI>10.1016/j.techfore.2005.12.010</DOI>
+    <UT>WOS:000243867500007</UT>
+    <order>223</order>
+    <author>Moutinho, Jose L.</author>
+    <author>Heitor, Manuel</author>
+  </paper>
+  <paper>
+    <title> Digital resources for the Humanities &amp;amp; Arts Conference (2006)</title>
+    <DOI/>
+    <UT/>
+    <order>224</order>
+    <author>Smith, Barry</author>
+    <author>Pressler, Chris</author>
+  </paper>
+  <paper>
+    <title>Searching for electronic journal articles to support academic tasks. A case study of the use of the Finnish National Electronic Library (FinELib)</title>
+    <DOI/>
+    <UT>WOS:000242121500016</UT>
+    <order>225</order>
+    <author>Vakkari, Pertti</author>
+    <author>Talja, Sanna</author>
+  </paper>
+  <paper>
+    <title>Everywhere art and art everywhere</title>
+    <DOI/>
+    <UT/>
+    <order>226</order>
+    <author>Mannings, Robin</author>
+  </paper>
+  <paper>
+    <title>The Stanford humanities lab: creating a digital , western wheel of life</title>
+    <DOI>10.2752/174322006778053735</DOI>
+    <UT/>
+    <order>227</order>
+    <author>Watkins, Greg</author>
+  </paper>
+  <paper>
+    <title>Sorting things in: Feminist knowledge representation and changing modes of scholarly production</title>
+    <DOI>10.1016/j.wsif.2006.04.010</DOI>
+    <UT>WOS:000239678400010</UT>
+    <order>228</order>
+    <author>Brown, Susan</author>
+    <author>Clements, Patricia</author>
+    <author>Grundy, Isobel</author>
+  </paper>
+  <paper>
+    <title>A digital interview with a donor family member instills professionalism in anatomy students</title>
+    <DOI/>
+    <UT/>
+    <order>229</order>
+    <author>Milanese, TR</author>
+    <author>Jones, DB</author>
+    <author>Schiefer, TK</author>
+    <author>Geske, JB</author>
+    <author>Carmichael, SW</author>
+    <author>Pawlina, W</author>
+  </paper>
+  <paper>
+    <title>'People, planet and prosperity': The determinants of humanity's environmental footprint</title>
+    <DOI>10.1111/j.1477-8947.2006.00155.x</DOI>
+    <UT>WOS:000236025300004</UT>
+    <order>230</order>
+    <author>Hammond, GP</author>
+  </paper>
+  <paper>
+    <title>The rendering of humanities information in a digital context - Current trends and future developments</title>
+    <DOI>10.1108/00012530610648699</DOI>
+    <UT>WOS:000237940300007</UT>
+    <order>231</order>
+    <author>Hockey, Susan</author>
+  </paper>
+  <paper>
+    <title>Scholarly research and information practices: a domain analytic approach</title>
+    <DOI>10.1016/j.ipm.2004.09.004</DOI>
+    <UT>WOS:000232355300019</UT>
+    <order>232</order>
+    <author>Fry, J</author>
+  </paper>
+  <paper>
+    <title>User experience and the idea of design in HCI</title>
+    <DOI/>
+    <UT>WOS:000238085600001</UT>
+    <order>233</order>
+    <author>Wright, Peter</author>
+    <author>Blythe, Mark</author>
+    <author>McCarthy, John</author>
+  </paper>
+  <paper>
+    <title>Expanding a humanities digital library: Musical references in Cervantes' works</title>
+    <DOI/>
+    <UT>WOS:000241101500014</UT>
+    <order>234</order>
+    <author>Singh, Manas</author>
+    <author>Furuta, Richard</author>
+    <author>Urbina, Eduardo</author>
+    <author>Audenaert, Neal</author>
+    <author>Deng, Jie</author>
+    <author>Monroy, Carlos</author>
+  </paper>
+  <paper>
+    <title>Representing aggregate works in the digital library</title>
+    <DOI/>
+    <UT>WOS:000241101500061</UT>
+    <order>235</order>
+    <author>Buchanan, George</author>
+    <author>Gow, Jeremy</author>
+    <author>Blandford, Ann</author>
+    <author>Rimmer, Jon</author>
+    <author>Warwick, Claire</author>
+  </paper>
+  <paper>
+    <title>Why is AI so scary?</title>
+    <DOI>10.1016/j.artint.2005.10.008</DOI>
+    <UT/>
+    <order>236</order>
+    <author>Anderson, ML</author>
+  </paper>
+  <paper>
+    <title>"A belief in humanity is a belief in colored men": Using culture to span the digital divide</title>
+    <DOI/>
+    <UT>WOS:000237112500017</UT>
+    <order>237</order>
+    <author>Brock, A</author>
+  </paper>
+  <paper>
+    <title>Scholarly work and the shaping of digital access</title>
+    <DOI>10.1002/asi.20204</DOI>
+    <UT>WOS:000231426600003</UT>
+    <order>238</order>
+    <author>Palmer, CL</author>
+  </paper>
+  <paper>
+    <title>Why technology matters: the humanities in the twenty-first century</title>
+    <DOI>10.1179/030801805X25909</DOI>
+    <UT>WOS:000230758000002</UT>
+    <order>239</order>
+    <author>Katz, SN</author>
+  </paper>
+  <paper>
+    <title>Culture and technology: the way we live now, what is to be done?</title>
+    <DOI>10.1179/030801805X25918</DOI>
+    <UT>WOS:000230758000008</UT>
+    <order>240</order>
+    <author>McGann, J</author>
+  </paper>
+  <paper>
+    <title>The conscious and technological man.</title>
+    <DOI/>
+    <UT>WOS:000237551900026</UT>
+    <order>241</order>
+    <author>Bulgarelli, S</author>
+  </paper>
+  <paper>
+    <title>The role of digital libraries in moving toward knowledge environments</title>
+    <DOI/>
+    <UT>WOS:000228834300011</UT>
+    <order>242</order>
+    <author>Fox, EA</author>
+    <author>Goncalves, MA</author>
+    <author>Shen, R</author>
+  </paper>
+  <paper>
+    <title>Queries in context: Access to digitized historic documents in a collaboratory for the humanities </title>
+    <DOI/>
+    <UT>WOS:000228834300013</UT>
+    <order>243</order>
+    <author>Thiel, U</author>
+    <author>Brocks, H</author>
+    <author>Dirsch-Weigand, A</author>
+    <author>Everts, A</author>
+    <author>Frommholz, I</author>
+    <author>Stein, A</author>
+  </paper>
+  <paper>
+    <title>A collaborative model for teaching E-resources: Northwestern University's graduate training day</title>
+    <DOI>10.1353/pla.2005.0008</DOI>
+    <UT>WOS:000226791500003</UT>
+    <order>244</order>
+    <author>Lightman, H</author>
+    <author>Reingold, RN</author>
+  </paper>
+  <paper>
+    <title>Integrating diverse research in a digital library focused on a single author</title>
+    <DOI/>
+    <UT>WOS:000233890800014</UT>
+    <order>245</order>
+    <author>Audenaert, N</author>
+    <author>Furuta, R</author>
+    <author>Urbina, E</author>
+    <author>Deng, J</author>
+    <author>Monroy, C</author>
+    <author>Saenz, R</author>
+    <author>Careaga, D</author>
+  </paper>
+  <paper>
+    <title>Information seeking by humanities scholars</title>
+    <DOI/>
+    <UT>WOS:000233890800020</UT>
+    <order>246</order>
+    <author>Buchanan, G</author>
+    <author>Cunningham, SJ</author>
+    <author>Blandford, A</author>
+    <author>Rimmer, J</author>
+    <author>Warwick, C</author>
+  </paper>
+  <paper>
+    <title>Using a native XML database for encoded archival description search and retrieval</title>
+    <DOI/>
+    <UT>WOS:000227345300005</UT>
+    <order>247</order>
+    <author>Cornish, A</author>
+  </paper>
+  <paper>
+    <title>Research: Why is it done?</title>
+    <DOI>10.1023/B:WATE.0000026606.43479.f2</DOI>
+    <UT/>
+    <order>248</order>
+    <author>Trevors, JT</author>
+  </paper>
+  <paper>
+    <title>Theories in the humanities and social sciences and methods of creating digital media</title>
+    <DOI/>
+    <UT/>
+    <order>249</order>
+    <author>Wulf, V</author>
+  </paper>
+  <paper>
+    <title>WebGIS-RBDL - A rare book digital library supporting spatio-temporary retrieval</title>
+    <DOI/>
+    <UT>WOS:000226741400027</UT>
+    <order>250</order>
+    <author>Zhang, M</author>
+    <author>Yang, DQ</author>
+    <author>Deng, ZH</author>
+    <author>Wu, S</author>
+    <author>Li, F</author>
+    <author>Tang, SW</author>
+  </paper>
+  <paper>
+    <title>teiPublisher: Bridging the gap between a simple set of structureddocuments and a functional digital library</title>
+    <DOI/>
+    <UT>WOS:000224092600039</UT>
+    <order>251</order>
+    <author>Kumar, A</author>
+    <author>Bia, A</author>
+    <author>Holmes, M</author>
+    <author>Schreibman, S</author>
+    <author>Siemens, R</author>
+    <author>Walsh, J</author>
+  </paper>
+  <paper>
+    <title>Shifting the paradigm of philosophy of science: Philosophy of information and a new renaissance</title>
+    <DOI>10.1023/A:1026248701090</DOI>
+    <UT>WOS:000186131600004</UT>
+    <order>252</order>
+    <author>Dodig-Crnkovic, G</author>
+  </paper>
+  <paper>
+    <title>Graduate education in humanities computing </title>
+    <DOI>10.1023/A:1025011813155</DOI>
+    <UT/>
+    <order>253</order>
+    <author>Rockwell, G</author>
+  </paper>
+  <paper>
+    <title>Gearing up the humanities for the digital era</title>
+    <DOI/>
+    <UT>WOS:000184009100004</UT>
+    <order>254</order>
+    <author>Tomaselli, K</author>
+    <author>Shepperson, A</author>
+  </paper>
+  <paper>
+    <title>Teaching the truths (Learning how to integrate computing into humanities instruction)</title>
+    <DOI/>
+    <UT/>
+    <order>255</order>
+    <author>Edmundson, M</author>
+  </paper>
+  <paper>
+    <title>Special section: Selected papers from the IEEE/ACM International Symposium on Cluster Computing and the Grid (CCGrid 2002), Berlin-Brandenburg Academy of Sciences and Humanities , Berlin, Germany, 21-24 May 2002</title>
+    <DOI>10.1016/S0167-739X(03)00038-4</DOI>
+    <UT/>
+    <order>256</order>
+    <author>Bal, H</author>
+    <author>Lohr, KP</author>
+    <author>Reinefeld, A</author>
+    <author>Lee, C</author>
+  </paper>
+  <paper>
+    <title> Computing in the social sciences and humanities </title>
+    <DOI>10.1353/pla.2003.0037</DOI>
+    <UT>WOS:000183232300018</UT>
+    <order>257</order>
+    <author>Jentz, JB</author>
+  </paper>
+  <paper>
+    <title>Post-humanity and the interstitial: A glorification of possibility in Gibson's bridge sequence</title>
+    <DOI/>
+    <UT>WOS:000181117300005</UT>
+    <order>258</order>
+    <author>Murphy, G</author>
+  </paper>
+  <paper>
+    <title>Beyond the Web: TEI, the digital library, and the ebook revolution</title>
+    <DOI>10.1023/A:1021895322291</DOI>
+    <UT>WOS:000180268700004</UT>
+    <order>259</order>
+    <author>Gibson, M</author>
+    <author>Ruotolo, C</author>
+  </paper>
+  <paper>
+    <title>ATLAS: A web-based software architecture for multimedia e-learning environments in virtual communities</title>
+    <DOI/>
+    <UT>WOS:000185886200019</UT>
+    <order>260</order>
+    <author>Spaniol, M</author>
+    <author>Klamma, R</author>
+    <author>Jarke, M</author>
+  </paper>
+  <paper>
+    <title>MOAC II user evaluation: Making museum content useful</title>
+    <DOI>10.1002/meet.14504001104</DOI>
+    <UT>WOS:000228354100104</UT>
+    <order>261</order>
+    <author>Gilliland-Swetland, A</author>
+    <author>Chandler, RL</author>
+    <author>White, L</author>
+  </paper>
+  <paper>
+    <title>Reasons for the use and non-use of electronic journals and databases - A domain analytic study in four scholarly disciplines</title>
+    <DOI>10.1108/00220410310506312</DOI>
+    <UT>WOS:000186916600003</UT>
+    <order>262</order>
+    <author>Talja, S</author>
+    <author>Maula, H</author>
+  </paper>
+  <paper>
+    <title>Structure-aware query for digital libraries: Use cases and challenges for the humanities </title>
+    <DOI/>
+    <UT>WOS:000185995400018</UT>
+    <order>263</order>
+    <author>York, C</author>
+    <author>Wulfman, C</author>
+    <author>Crane, G</author>
+  </paper>
+  <paper>
+    <title>Document-centered collaboration for scholars in the humanities - The COLLATE system</title>
+    <DOI/>
+    <UT>WOS:000185995400040</UT>
+    <order>264</order>
+    <author>Frommholz, I</author>
+    <author>Brocks, H</author>
+    <author>Thiel, U</author>
+    <author>Neuhold, E</author>
+    <author>Iannone, L</author>
+    <author>Semeraro, G</author>
+    <author>Berardi, M</author>
+    <author>Ceci, M</author>
+  </paper>
+  <paper>
+    <title>Neo-colonial science by the most industrialised upon the least developed countries in peer-reviewed publishing</title>
+    <DOI>10.1023/A:1022374703178</DOI>
+    <UT>WOS:000181012900004</UT>
+    <order>265</order>
+    <author>Dahdouh-Guebas, F</author>
+    <author>Ahimbisibwe, J</author>
+    <author>Van Moll, R</author>
+    <author>Koedam, N</author>
+  </paper>
+  <paper>
+    <title>A plea for electronic humanism</title>
+    <DOI>10.2143/SDL.45.4.504226</DOI>
+    <UT>WOS:000221617400007</UT>
+    <order>266</order>
+    <author>Bakker, JH</author>
+  </paper>
+  <paper>
+    <title>The future of libraries and humanities research: New strategic directions for the British Library</title>
+    <DOI>10.1353/lac.2002.0001</DOI>
+    <UT>WOS:000173739200005</UT>
+    <order>267</order>
+    <author>Brindley, L</author>
+  </paper>
+  <paper>
+    <title>Theory as praxis: The poetics of electronic textuality (on Loss Glazier, Digital Poetics; Susan Hockey, Electronic Texts in the Humanities ; and Jerome McGann, Radiant Textuality)</title>
+    <DOI>10.1353/mod.2002.0069</DOI>
+    <UT>WOS:000179786400008</UT>
+    <order>268</order>
+    <author>Drucker, J</author>
+  </paper>
+  <paper>
+    <title>The evolution of humanities computing centers</title>
+    <DOI/>
+    <UT/>
+    <order>269</order>
+    <author>Flanders, J</author>
+    <author>Unsworth, J</author>
+  </paper>
+  <paper>
+    <title>A new computer-assisted literary criticism?</title>
+    <DOI>10.1023/A:1016134426453</DOI>
+    <UT>WOS:000176756300002</UT>
+    <order>270</order>
+    <author>Siemens, RG</author>
+  </paper>
+  <paper>
+    <title>Computer-mediated texts and textuality: Theory and practice</title>
+    <DOI>10.1023/A:1016178200469</DOI>
+    <UT>WOS:000176756300004</UT>
+    <order>271</order>
+    <author>Schreibman, S</author>
+  </paper>
+  <paper>
+    <title>Animating the language machine: Computers and performance</title>
+    <DOI>10.1023/A:1016130317308</DOI>
+    <UT>WOS:000176756300007</UT>
+    <order>272</order>
+    <author>Soules, M</author>
+  </paper>
+  <paper>
+    <title>The cascade of interactions in the digital library interface</title>
+    <DOI>10.1016/S0306-4573(01)00041-3</DOI>
+    <UT>WOS:000174725100005</UT>
+    <order>273</order>
+    <author>Bates, MJ</author>
+  </paper>
+  <paper>
+    <title>Archive (Digital humanities research)</title>
+    <DOI/>
+    <UT/>
+    <order>274</order>
+    <author>Kirschenbaum, MG</author>
+  </paper>
+  <paper>
+    <title> Digital texts (Archival research, humanities scholarship)</title>
+    <DOI/>
+    <UT/>
+    <order>275</order>
+    <author>McGann, J</author>
+  </paper>
+  <paper>
+    <title>Reducing the information gap: Digital library development in Brazil</title>
+    <DOI>10.1002/meet.14503901111</DOI>
+    <UT>WOS:000180277800111</UT>
+    <order>276</order>
+    <author>McCarthy, C</author>
+    <author>da Cunha, MB</author>
+  </paper>
+  <paper>
+    <title> Digital libraries in academia: Challenges and changes</title>
+    <DOI/>
+    <UT>WOS:000181472700044</UT>
+    <order>277</order>
+    <author>Adams, A</author>
+    <author>Blandford, A</author>
+  </paper>
+  <paper>
+    <title>DRH 99 selected papers from digital resources for the humanities 1999</title>
+    <DOI/>
+    <UT>WOS:000180353700012</UT>
+    <order>278</order>
+    <author>Holland, M</author>
+  </paper>
+  <paper>
+    <title>The information work of interdisciplinary humanities scholars: Exploration and translation</title>
+    <DOI/>
+    <UT>WOS:000173831500004</UT>
+    <order>279</order>
+    <author>Palmer, CL</author>
+    <author>Neumann, LJ</author>
+  </paper>
+  <paper>
+    <title> Computing in humanities education. A European perspective</title>
+    <DOI>10.2307/3735706</DOI>
+    <UT>WOS:000174022100097</UT>
+    <order>280</order>
+    <author>Lewis, D</author>
+  </paper>
+  <paper>
+    <title>Term co-occurrence analysis as an interface for digital libraries</title>
+    <DOI/>
+    <UT>WOS:000181620100010</UT>
+    <order>281</order>
+    <author>Buzydlowski, JW</author>
+    <author>White, HD</author>
+    <author>Lin, X</author>
+  </paper>
+  <paper>
+    <title>Marketing undergraduates' attitudes towards query-based instructional machines as a possible learning medium</title>
+    <DOI>10.1111/1467-8535.00214</DOI>
+    <UT>WOS:000171393800007</UT>
+    <order>282</order>
+    <author>Bennett, R</author>
+    <author>Kottasz, R</author>
+  </paper>
+  <paper>
+    <title>Looking through an unknown, remembered gate: interdisciplinary meditations on humanities computing </title>
+    <DOI>10.1179/030801801679430</DOI>
+    <UT>WOS:000172479500006</UT>
+    <order>283</order>
+    <author>McCarty, W</author>
+  </paper>
+  <paper>
+    <title>Preserving UK digital library collections</title>
+    <DOI/>
+    <UT>WOS:000169865100002</UT>
+    <order>284</order>
+    <author>Beagrie, N</author>
+  </paper>
+  <paper>
+    <title>The endless gallery: Visualizing authors' citation images in the humanities </title>
+    <DOI/>
+    <UT>WOS:000175838000018</UT>
+    <order>285</order>
+    <author>White, H</author>
+    <author>Lin, X</author>
+    <author>Buzydlowski, J</author>
+  </paper>
+  <paper>
+    <title>The job market for humanities computing </title>
+    <DOI/>
+    <UT/>
+    <order>286</order>
+  </paper>
+  <paper>
+    <title>Image-based humanities computing </title>
+    <DOI/>
+    <UT>WOS:000172594900002</UT>
+    <order>287</order>
+    <author>Kirschenbaum, MG</author>
+  </paper>
+  <paper>
+    <title>Text-image coupling for editing literary sources</title>
+    <DOI/>
+    <UT>WOS:000172594900005</UT>
+    <order>288</order>
+    <author>Lecolinet, E</author>
+    <author>Robert, L</author>
+    <author>Role, F</author>
+  </paper>
+  <paper>
+    <title>Select resources for image-based humanities computing </title>
+    <DOI/>
+    <UT/>
+    <order>289</order>
+    <author>Nowviskie, B</author>
+  </paper>
+  <paper>
+    <title>Art in the age of spiritual machines (with apologies to Ray Kurzweil)</title>
+    <DOI>10.1162/002409401753521593</DOI>
+    <UT>WOS:000172739600011</UT>
+    <order>290</order>
+    <author>Hovagimyan, GH</author>
+  </paper>
+  <paper>
+    <title>Attitudes toward the computer: construct validation of an instrument with scales differentiated by content</title>
+    <DOI>10.1016/S0747-5632(00)00025-X</DOI>
+    <UT>WOS:000165350400001</UT>
+    <order>291</order>
+    <author>Richter, T</author>
+    <author>Naumann, J</author>
+    <author>Groeben, N</author>
+  </paper>
+  <paper>
+    <title>Evaluating digital libraries: A longitudinal and multifaceted view</title>
+    <DOI/>
+    <UT>WOS:000167024700006</UT>
+    <order>292</order>
+    <author>Marchionini, G</author>
+  </paper>
+  <paper>
+    <title>From concordances to subject portals: Supporting the text-centred humanities community</title>
+    <DOI>10.1023/A:1002630710402</DOI>
+    <UT>WOS:000088075200003</UT>
+    <order>293</order>
+    <author>Fraser, M</author>
+  </paper>
+  <paper>
+    <title>Love's labour's lost: The failure of traditional selection practice in the acquisition of humanities electronic texts</title>
+    <DOI/>
+    <UT>WOS:000089338200006</UT>
+    <order>294</order>
+    <author>Case, BD</author>
+  </paper>
+  <paper>
+    <title>Incorporating intelligence into engineered products: adaptive structures</title>
+    <DOI>10.1504/IJCAT.2000.000219</DOI>
+    <UT>WOS:000087049000001</UT>
+    <order>295</order>
+    <author>Utku, S</author>
+  </paper>
+  <paper>
+    <title> Digital setting for instruction - Didactic communicative technology</title>
+    <DOI>10.1108/03684920010342170</DOI>
+    <UT>WOS:000166048300007</UT>
+    <order>296</order>
+    <author>Nigro, A</author>
+  </paper>
+  <paper>
+    <title>The fine art of creating life (Computer artworks, biological art)</title>
+    <DOI>10.1162/002409400552865</DOI>
+    <UT>WOS:000090011000008</UT>
+    <order>297</order>
+    <author>Youngs, AM</author>
+  </paper>
+  <paper>
+    <title>Introduction to special topic issue of computers and the humanities : "Digital images''</title>
+    <DOI>10.1023/A:1002410402681</DOI>
+    <UT/>
+    <order>298</order>
+    <author>Goodrum, AA</author>
+    <author>O'Connor, BC</author>
+    <author>Turner, JM</author>
+  </paper>
+  <paper>
+    <title>Managing full-indexed audiovisual documents: A new perspective for the humanities </title>
+    <DOI>10.1023/A:1002477204396</DOI>
+    <UT>WOS:000084465100003</UT>
+    <order>299</order>
+    <author>Auffret, G</author>
+    <author>Prie, Y</author>
+  </paper>
+  <paper>
+    <title>Struggling with the digital divide - Internet infrastructure, policies and regulations</title>
+    <DOI/>
+    <UT>WOS:000084193500022</UT>
+    <order>300</order>
+    <author>Rao, M</author>
+    <author>Bhandari, SR</author>
+    <author>Iqbal, SM</author>
+    <author>Sinha, A</author>
+    <author>Siraj, WU</author>
+  </paper>
+  <paper>
+    <title>The Text Encoding Initiative at 10: Not just an interchange format anymore - but a new research community</title>
+    <DOI>10.1023/A:1001832310939</DOI>
+    <UT>WOS:000080011600001</UT>
+    <order>301</order>
+    <author>Mylonas, E</author>
+    <author>Renear, A</author>
+  </paper>
+  <paper>
+    <title>Delivering electronic texts over the Web: The current and planned practices of the Oxford Text Archive</title>
+    <DOI>10.1023/A:1001726011322</DOI>
+    <UT>WOS:000080011600013</UT>
+    <order>302</order>
+    <author>Morrison, A</author>
+  </paper>
+  <paper>
+    <title>The rush to technology: A view from the humanists</title>
+    <DOI/>
+    <UT>WOS:000081387200003</UT>
+    <order>303</order>
+    <author>Massey-Burzio, V</author>
+  </paper>
+  <paper>
+    <title>English studies on the internet: Proceedings of the 1996 Erfurt Conference on Computing in the Humanities </title>
+    <DOI/>
+    <UT>WOS:000084370200020</UT>
+    <order>304</order>
+    <author>Nestvold, R</author>
+  </paper>
+  <paper>
+    <title>'Anglistik im Internet'. Proceedings of the 1996 Erfurt conference on computing in the humanities </title>
+    <DOI/>
+    <UT>WOS:000084616100045</UT>
+    <order>305</order>
+    <author>Schmitz, G</author>
+  </paper>
+  <paper>
+    <title>New ways to manage information</title>
+    <DOI>10.1109/2.738305</DOI>
+    <UT>WOS:000077854600020</UT>
+    <order>306</order>
+    <author>Billinghurst, M</author>
+    <author>Starner, T</author>
+  </paper>
+  <paper>
+    <title>The National Initiative for a Networked Cultural Heritage</title>
+    <DOI/>
+    <UT>WOS:000075965300009</UT>
+    <order>307</order>
+    <author>Green, D</author>
+  </paper>
+  <paper>
+    <title>Media Weaver - A distributed media authoring system for networked scholarly workspaces</title>
+    <DOI/>
+    <UT>WOS:000072524400002</UT>
+    <order>308</order>
+    <author>Wei, SX</author>
+  </paper>
+  <paper>
+    <title>An evaluation of the use of computer supported peer review for developing higher-level skills</title>
+    <DOI>10.1016/S0360-1315(97)00086-9</DOI>
+    <UT>WOS:000075282400016</UT>
+    <order>309</order>
+    <author>Davies, R</author>
+    <author>Berrow, T</author>
+  </paper>
+  <paper>
+    <title>CETH, electronic text centers, and the humanities community</title>
+    <DOI>10.1108/07378839810305800</DOI>
+    <UT>WOS:000078738600007</UT>
+    <order>310</order>
+    <author>Gaunt, M</author>
+  </paper>
+  <paper>
+    <title>Internet resources for the studies on English philology and literature: Proceedings of the 1996 Erfurt conference on computing in the humanities </title>
+    <DOI/>
+    <UT>WOS:000076005000021</UT>
+    <order>311</order>
+    <author>Handler, P</author>
+  </paper>
+  <paper>
+    <title>Fast implementations of fuzzy arithmetic operations using fast Fourier transform (FFT)</title>
+    <DOI>10.1016/S0165-0114(97)00147-4</DOI>
+    <UT>WOS:A1997YC16000014</UT>
+    <order>312</order>
+    <author>Kosheleva, O</author>
+    <author>Cabrera, SD</author>
+    <author>Gibson, GA</author>
+    <author>Koshelev, M</author>
+  </paper>
+  <paper>
+    <title>SGML and the Orlando Project: Descriptive markup for an electronic history of women's writing</title>
+    <DOI>10.1023/A:1001013123032</DOI>
+    <UT>WOS:000075072900002</UT>
+    <order>313</order>
+    <author>Brown, S</author>
+    <author>Fisher, S</author>
+    <author>Clements, P</author>
+    <author>Binhammer, K</author>
+    <author>Butler, T</author>
+    <author>Carter, K</author>
+    <author>Grundy, I</author>
+    <author>Hockey, S</author>
+  </paper>
+  <paper>
+    <title>PORT: A testbed paradigm for knowledge processing in the humanities </title>
+    <DOI/>
+    <UT>WOS:000073876200035</UT>
+    <order>314</order>
+    <author>Keeler, MA</author>
+    <author>Searle, LF</author>
+    <author>Kloesel, C</author>
+  </paper>
+  <paper>
+    <title>TACTweb: The intersection of text-analysis and hypertext</title>
+    <DOI/>
+    <UT>WOS:000075343000003</UT>
+    <order>315</order>
+    <author>Rockwell, G</author>
+    <author>Passmore, G</author>
+    <author>Bradley, J</author>
+  </paper>
+  <paper>
+    <title>The Getty end-user online searching project in the humanities : Report No 6: Overview and conclusions</title>
+    <DOI/>
+    <UT>WOS:A1996VU92000003</UT>
+    <order>316</order>
+    <author>Bates, MJ</author>
+  </paper>
+  <paper>
+    <title>Toward the humanities digital library: Building the local organization</title>
+    <DOI/>
+    <UT>WOS:A1996VU92000004</UT>
+    <order>317</order>
+    <author>Ellis, S</author>
+  </paper>
+  <paper>
+    <title>Libraries and the creation of electronic texts for the humanities </title>
+    <DOI/>
+    <UT>WOS:A1996VU92000005</UT>
+    <order>318</order>
+    <author>Smith, N</author>
+    <author>Tibbo, HR</author>
+  </paper>
+  <paper>
+    <title>Social informatics of digital library use and infrastructure</title>
+    <DOI/>
+    <UT>WOS:A1996VU79800012</UT>
+    <order>319</order>
+    <author>Bishop, AP</author>
+    <author>Star, SL</author>
+  </paper>
+  <paper>
+    <title>A rationale for teacher education and CALL: The holistic view and its implications</title>
+    <DOI/>
+    <UT>WOS:A1996WT08100002</UT>
+    <order>320</order>
+    <author>Levy, M</author>
+  </paper>
+  <paper>
+    <title>Selecting microfilm for digital preservation: A case study from project open book</title>
+    <DOI/>
+    <UT>WOS:A1996TZ44300006</UT>
+    <order>321</order>
+    <author>Conway, P</author>
+  </paper>
+  <paper>
+    <title> DIGITAL WORD - TEXT-BASED COMPUTING IN THE HUMANITIES - LANDOW,GP, DELANY,P</title>
+    <DOI/>
+    <UT>WOS:A1995QT70500022</UT>
+    <order>322</order>
+    <author>DUGGAN, MK</author>
+  </paper>
+  <paper>
+    <title>A HISTORIANS GUIDE TO COMPUTING (OXFORD GUIDE TO COMPUTING FOR THE HUMANITIES ) - GREENSTEIN,DI</title>
+    <DOI/>
+    <UT>WOS:A1995TH88500018</UT>
+    <order>323</order>
+    <author>DIAZ, G</author>
+  </paper>
+  <paper>
+    <title>The digital word: Text-based computing in the humanities - Landow,GP, Delany,P</title>
+    <DOI>10.1016/0306-4573(95)90035-7</DOI>
+    <UT>WOS:A1995TK44600012</UT>
+    <order>324</order>
+    <author>Hockey, S</author>
+  </paper>
+  <paper>
+    <title>KNOWLEDGE FROM THE DIGITAL PLUG - COMMENTS ON THE DATABASE WORLD IN THE SOCIAL-SCIENCES AND THE INTERNET</title>
+    <DOI/>
+    <UT>WOS:A1995RD23300001</UT>
+    <order>325</order>
+    <author>HERRMANN, HJ</author>
+    <author>WEIGEL, U</author>
+  </paper>
+  <paper>
+    <title>TEACHING NEW TRICKS TO AN OLD MAP</title>
+    <DOI/>
+    <UT>WOS:A1995QJ80700009</UT>
+    <order>326</order>
+    <author>ORE, ES</author>
+  </paper>
+  <paper>
+    <title>THE DIGITAL WORD - TEXT-BASED COMPUTING IN THE HUMANITIES - LANDOW,GP, DELANY,P</title>
+    <DOI/>
+    <UT>WOS:A1995RX27000021</UT>
+    <order>327</order>
+    <author>GRODEN, M</author>
+  </paper>
+  <paper>
+    <title>THE DIGITAL WORD - TEXT-BASED COMPUTING IN THE HUMANITIES - LANDOW,GP, DELANY,P</title>
+    <DOI/>
+    <UT>WOS:A1994MY79700009</UT>
+    <order>328</order>
+    <author>DAVENPORT, E</author>
+  </paper>
+  <paper>
+    <title>EVALUATING ELECTRONIC TEXTS IN THE HUMANITIES </title>
+    <DOI/>
+    <UT>WOS:A1994RE84700008</UT>
+    <order>329</order>
+    <author>HOCKEY, S</author>
+  </paper>
+  <paper>
+    <title>THE DIGITAL WORD - TEXT-BASED COMPUTING IN THE HUMANITIES - LANDOW,GP, DELANY,P</title>
+    <DOI/>
+    <UT>WOS:A1994MP40700009</UT>
+    <order>330</order>
+    <author>PRICEWILKIN, J</author>
+  </paper>
+  <paper>
+    <title>MU-EYEBALL - AN INTERACTIVE SYSTEM FOR PRODUCING STYLISTIC DESCRIPTIONS AND COMPARISONS</title>
+    <DOI>10.1007/BF01830682</DOI>
+    <UT>WOS:A1994NY60400001</UT>
+    <order>331</order>
+    <author>ROSS, D</author>
+    <author>HUNTER, D</author>
+  </paper>
+  <paper>
+    <title>THE COMPUTER IN LITERARY ANALYSIS - USING TACT WITH STUDENTS</title>
+    <DOI>10.1007/BF01830684</DOI>
+    <UT/>
+    <order>332</order>
+    <author>HAWTHORNE, M</author>
+  </paper>
+  <paper>
+    <title>THE DIGITAL WORD - TEXT-BASED COMPUTING IN THE HUMANITIES - LANDOW,GP, DELANY,P</title>
+    <DOI>10.2307/1576021</DOI>
+    <UT>WOS:A1994PC11900028</UT>
+    <order>333</order>
+    <author>ROSS, R</author>
+  </paper>
+  <paper>
+    <title>THE ELECTRONIC TEXT CENTER - A HUMANITIES COMPUTING INITIATIVE AT THE UNIVERSITY-OF-VIRGINIA</title>
+    <DOI>10.1108/eb045231</DOI>
+    <UT>WOS:A1993MU03500006</UT>
+    <order>334</order>
+    <author>SEAMAN, D</author>
+  </paper>
+  <paper>
+    <title>THE SURFACE OF LANGUAGE AND HUMANITIES COMPUTING </title>
+    <DOI>10.1007/BF01829381</DOI>
+    <UT>WOS:A1993ND99100003</UT>
+    <order>335</order>
+    <author>HENRY, C</author>
+  </paper>
+  <paper>
+    <title>TOWARDS THE IMPLEMENTATION OF TEXT AND DISCOURSE THEORY IN COMPUTER-ASSISTED TEXTUAL ANALYSIS</title>
+    <DOI>10.1007/BF01829386</DOI>
+    <UT>WOS:A1993ND99100008</UT>
+    <order>336</order>
+    <author>BRUCE, D</author>
+  </paper>
+  <paper>
+    <title>AN ARGUMENT FOR SINGLE-AUTHOR AND SIMILAR STUDIES USING QUANTITATIVE METHODS - IS THERE SAFETY IN NUMBERS</title>
+    <DOI>10.1007/BF01829387</DOI>
+    <UT>WOS:A1993ND99100009</UT>
+    <order>337</order>
+    <author>GOLDFIELD, JD</author>
+  </paper>
+  <paper>
+    <title>COMMON METHODOLOGIES IN HUMANITIES COMPUTING AND COMPUTATIONAL-LINGUISTICS - INTRODUCTION</title>
+    <DOI>10.1007/BF00136978</DOI>
+    <UT>WOS:A1992LK03700001</UT>
+    <order>338</order>
+    <author>IDE, N</author>
+    <author>WALKER, D</author>
+  </paper>
+  <paper>
+    <title>SOME PERSPECTIVES ON TEACHING COMPUTERS AND THE HUMANITIES </title>
+    <DOI/>
+    <UT/>
+    <order>339</order>
+    <author>HOCKEY, S</author>
+  </paper>
+  <paper>
+    <title>BEAUTY AND THE BEAST - NEW APPROACHES TO TEACHING COMPUTING FOR HUMANITIES STUDENTS AT THE UNIVERSITY OF ABERDEEN</title>
+    <DOI>10.1007/BF00054272</DOI>
+    <UT>WOS:A1992KG20800004</UT>
+    <order>340</order>
+    <author>HOLLAND, S</author>
+    <author>BURGESS, G</author>
+  </paper>
+  <paper>
+    <title>COURSEWARE IN THE HUMANITIES - EXPANDED HORIZONS</title>
+    <DOI>10.1007/BF00054273</DOI>
+    <UT>WOS:A1992KG20800005</UT>
+    <order>341</order>
+    <author>IRIZARRY, E</author>
+  </paper>
+  <paper>
+    <title>GETTYS SYNONAME(TM) AND ITS COUSINS - A SURVEY OF APPLICATIONS OF PERSONAL NAME-MATCHING ALGORITHMS</title>
+    <DOI>10.1002/(SICI)1097-4571(199208)43:7&amp;lt;459::AID-ASI1&amp;gt;3.0.CO;2-D</DOI>
+    <UT>WOS:A1992JG66200001</UT>
+    <order>342</order>
+    <author>BORGMAN, CL</author>
+    <author>SIEGFRIED, SL</author>
+  </paper>
+  <paper>
+    <title> COMPUTING IN TEXTUAL STUDIES</title>
+    <DOI>10.1016/0360-1315(92)90024-Y</DOI>
+    <UT>WOS:A1992JN56800021</UT>
+    <order>343</order>
+    <author>DEEGAN, M</author>
+    <author>LEE, S</author>
+    <author>MULLINGS, C</author>
+  </paper>
+  <paper>
+    <title>HYPERTEXT, HYPERMEDIA, AND THE HUMANITIES </title>
+    <DOI/>
+    <UT>WOS:A1992JH23300004</UT>
+    <order>344</order>
+    <author>WELSCH, EK</author>
+  </paper>
+  <paper>
+    <title> HUMANITIES COMPUTING 25 YEARS LATER</title>
+    <DOI>10.1007/BF00141184</DOI>
+    <UT>WOS:A1991HJ82900001</UT>
+    <order>345</order>
+    <author>RABEN, J</author>
+  </paper>
+  <paper>
+    <title> COMPUTING IN MUSICOLOGY, 1966-91</title>
+    <DOI>10.1007/BF00141188</DOI>
+    <UT>WOS:A1991HJ82900005</UT>
+    <order>346</order>
+    <author>HEWLETT, WB</author>
+    <author>SELFRIDGEFIELD, E</author>
+  </paper>
+  <paper>
+    <title> HUMANITIES COMPUTING IN ITALY - INTRODUCTION</title>
+    <DOI/>
+    <UT>WOS:A1990EU08400001</UT>
+    <order>347</order>
+    <author>SPINOSA, G</author>
+  </paper>
+  <paper>
+    <title>THE INTERDISCIPLINARY GROUP FOR EXPRESSION SIGNS COMPUTING </title>
+    <DOI/>
+    <UT/>
+    <order>348</order>
+    <author>BRANCA, P</author>
+    <author>PONTANI, P</author>
+    <author>SILVA, M</author>
+  </paper>
+  <paper>
+    <title>THE HUMANITIES COMPUTING YEARBOOK - 1988 - LANCASHIRE,I, MCCARTY,W</title>
+    <DOI/>
+    <UT>WOS:A1990DR76800012</UT>
+    <order>349</order>
+    <author>RABEN, J</author>
+  </paper>
+  <paper>
+    <title> COMPUTING IN THE HUMANITIES AND SOCIAL-SCIENCES, VOL 1 - FUNDAMENTALS - TANNENBAUM,RS</title>
+    <DOI/>
+    <UT>WOS:A1989AE34600029</UT>
+    <order>350</order>
+    <author>OBRIEN, LG</author>
+  </paper>
+  <paper>
+    <title>PERSPECTIVES ON TEACHING COMPUTING IN THE HUMANITIES </title>
+    <DOI>10.1007/BF00517811</DOI>
+    <UT>WOS:A1987L501100003</UT>
+    <order>351</order>
+    <author>OAKMAN, RL</author>
+  </paper>
+  <paper>
+    <title> COMPUTING IN THE HUMANITIES - PATTON,PC, HOLOIEN,RA</title>
+    <DOI/>
+    <UT>WOS:A1983RV58500009</UT>
+    <order>352</order>
+    <author>EMBLETON, SM</author>
+  </paper>
+  <paper>
+    <title> COMPUTING IN THE HUMANITIES - BAILEY,RW</title>
+    <DOI/>
+    <UT>WOS:A1983RX51100017</UT>
+    <order>353</order>
+    <author>ELZANATI, A</author>
+  </paper>
+  <paper>
+    <title> COMPUTING IN THE HUMANITIES - PATTON,PC, HOLOIEN,RA</title>
+    <DOI/>
+    <UT>WOS:A1982PH75700035</UT>
+    <order>354</order>
+    <author>GAGAN, D</author>
+  </paper>
+  <paper>
+    <title> COMPUTING IN THE HUMANITIES - PATTON,PC, HOLOIEN,RA</title>
+    <DOI/>
+    <UT>WOS:A1982PV53600008</UT>
+    <order>355</order>
+    <author>NEUSSEL, FH</author>
+  </paper>
+  <paper>
+    <title> COMPUTING IN THE HUMANITIES - PATTON,PC, HOLOIEN,RA</title>
+    <DOI/>
+    <UT>WOS:A1982PT76900005</UT>
+    <order>356</order>
+    <author>BENDER, TK</author>
+  </paper>
+  <paper>
+    <title>LETTER FROM BOULDER + HUMANITIES COMPUTING AT THE UNIVERSITY-OF-COLORADO, CENTER-FOR-COMPUTER-RESEARCH-IN-THE-HUMANITIES </title>
+    <DOI>10.1007/BF02404204</DOI>
+    <UT/>
+    <order>357</order>
+    <author>PRESTON, MJ</author>
+  </paper>
+  <paper>
+    <title>THE ANNALS OF HUMANITIES COMPUTING - THE INDEX THOMISTICUS</title>
+    <DOI>10.1007/BF02403798</DOI>
+    <UT>WOS:A1980KQ20400001</UT>
+    <order>358</order>
+    <author>BUSA, R</author>
+  </paper>
+  <paper>
+    <title>INTERACTIVE COMPUTING AND THE HUMANITIES - FRENCH - CHOURAQUI,E, VIRBEL,J</title>
+    <DOI/>
+    <UT>WOS:A1979JJ54300008</UT>
+    <order>359</order>
+    <author>KITTREDGE, R</author>
+  </paper>
+  <paper>
+    <title> COMPUTING IN THE HUMANITIES - LUSIGMAN,S, NORTH,JS</title>
+    <DOI>10.1016/0360-1315(79)90028-9</DOI>
+    <UT>WOS:A1979GQ72400009</UT>
+    <order>360</order>
+    <author>BARKER, P</author>
+  </paper>
+  <paper>
+    <title> HUMANITIES COMPUTING IN ITALY</title>
+    <DOI>10.1007/BF02395110</DOI>
+    <UT>WOS:A1973S639500003</UT>
+    <order>361</order>
+    <author>ZAMPOLLI, A</author>
+  </paper>
+</papers>
