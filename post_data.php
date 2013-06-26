@@ -10,7 +10,29 @@ function XML_add($doc, $parent, $child, $text = "") {
     $parent->appendChild($newnode);
     return $newnode;
 }
-
+function write_XML($writer, $data, $order) {
+    if (!$data) {
+        print "Error: data is empty\n";
+        return;
+    } else {
+        $writer->startElement('paper');
+        $writer->writeElement('order', $order);
+        foreach ($data as $ct) {
+            $writer->startElement('citation');
+            foreach ($ct as $key => $value) {
+                if ($key == "authors") {
+                    foreach ($value as $author) {
+                        $writer->writeElement('author', $author);
+                    }
+                } else {
+                    $writer->writeElement($key, $value);
+                }
+            }
+            $writer->endElement();
+        }
+        $writer->endElement();
+    }
+}
 function get_DOI($file) {
     //print $file;
     $ans = "";
@@ -50,7 +72,6 @@ function get_DOI2($html) {
 }
 
 function get_Record($record) {
-    print "\n*****RECORD******\n";
     $moreAuthors = 'et al';
     $ans = array();
     $ans['authors'] = array();
@@ -87,7 +108,7 @@ function get_Record($record) {
             }
         }
         $tmp = get_DOI2($record);
-        $ans['DOI'] = $tmp;
+        if($tmp)$ans['DOI'] = $tmp;
         return $ans;
     }
 }

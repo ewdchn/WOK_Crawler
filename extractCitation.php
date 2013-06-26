@@ -81,19 +81,21 @@ curl_setopt($citQuery, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($citQuery, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36");
 
 
-$citDoc = new DOMDocument();
-$citDoc->formatOutput = true;
-$r = $citDoc->createElement("citations");
-$citDoc->appendChild($r);
-
+//$citDoc = new DOMDocument();
+//$citDoc->formatOutput = true;
+//$r = $citDoc->createElement("citations");
+//$citDoc->appendChild($r);
+$writer = new XMLWriter();
+$writer->openUri("citation.xml");
+$writer->startDocument('1.0', 'UTF-8');
+$writer->setIndent(4);
+$writer->startElement('citations');
 $papers = $doc->getElementsByTagName("paper");
 foreach ($papers as $paper) {
     $order = (int) ($paper->getElementsByTagName("order")->item(0)->nodeValue);
     $paperTitle = ($paper->getElementsByTagName("title")->item(0)->nodeValue);
-    if($order<69)continue;
-    print "\n".$order;
-    print "  paper title: ".$paperTitle;
-    
+    print "\n" . $order;
+    print "\n  paper title: " . $paperTitle . "\n";
     $UT = $paper->getElementsByTagName("UT")->item(0)->nodeValue;
     $citation = array();
     if ($UT) {
@@ -128,23 +130,9 @@ foreach ($papers as $paper) {
                 $html = str_get_html($page);
             }
         }
-        //print_r($citation);
-        //XML_add($doc, $parent, $child, $text = "");
-        $p = XML_add($citDoc, $r, 'paper');
-        XML_add($citDoc, $p, "order", $order);
-        foreach ($citation as $citedPaper) {
-            $cp = XML_add($citDoc, $p, 'citedPaper');
-            foreach ($citedPaper as $key => $value) {
-                if ($key == 'authors') {
-                    foreach ($value as $authorName) {
-                        XML_add($citDoc, $cp, "author", $authorName);
-                    }
-                } else {
-                    XML_add($citDoc, $cp, $key, $value);
-                }
-            }
-        }
+        write_XML($writer, $citation, $order);
+       
     }
-    $citDoc->save("citedPaper.xml");
 }
+$writer->endElement();
 ?>
