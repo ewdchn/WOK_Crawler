@@ -50,45 +50,44 @@ function get_DOI2($html) {
 }
 
 function get_Record($record) {
+    print "\n*****RECORD******\n";
     $moreAuthors = 'et al';
     $ans = array();
     $ans['authors'] = array();
     $titleNode = $record->find('span[class=reference-title] value', 0);
     if (!$titleNode) {
-        // print $i . "No title skipping" . "\n";
-        return null;
+        return null;        // print $i . "No title skipping" . "\n";
     } else {
         $ans['title'] = $titleNode->innertext;
         if (!$titleNode->parent()->parent()->href) {
-            //print 'have no link: ' . $title . "\n";
-            $authorStr = $titleNode->parent()->next_sibling()->plaintext;
+            
         } else {
-            //print "URL: ".$titleNode->parent()->parent()->href;
             parse_str($titleNode->parent()->parent()->href, $url_vars);
-            //print_r($url_vars);
             $ans['UT'] = $url_vars['amp;isickref'];
-            //print $UT;
-            //print 'link: ' . $lnk . "\n";
-            $authorStr = $titleNode->parent()->parent()->next_sibling()->plaintext;
-            //print $title."  ".$authorStr;
         }
-        list($dump, $authors) = explode(':', $authorStr);
-        $authors = explode(';', $authors);
-        // print " ". $title . "\n  ";
+        foreach ($record->find('td[class=summary_data] div span[class=label]') as $div) {
+            if (!(strpos($div->plaintext, "Author") === false)) {
+                $authorStr = $div->parent()->plaintext;
+                break;
+            }
+        }
+        if (isset($authorStr)) {
+            list($dump, $authors) = explode(':', $authorStr);
+            $authors = explode(';', $authors);
+        }
+        else
+            print "\nError: authorStr Not Found: Result: " . $ans['title'] . "\n";
         foreach ($authors as $author) {
-            if(!(strpos($author,$moreAuthors)===false)){
-                $ans['more_authors']=true;break;
+            if (!(strpos($author, $moreAuthors) === false)) {
+                $ans['more_authors'] = true;
+                break;
+            } else {
+                $author = trim($author, " .");
+                array_push($ans['authors'], $author);
             }
-            else{
-            $author = trim($author, " .");
-            array_push($ans['authors'], $author);
-            }
-            // print "|" . $author . "|";
         }
-        $tmp =  get_DOI2($record);
+        $tmp = get_DOI2($record);
         $ans['DOI'] = $tmp;
-        // print "\n  " . $DOI . "\n";
-        //print_r($ans);
         return $ans;
     }
 }

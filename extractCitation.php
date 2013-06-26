@@ -70,7 +70,7 @@ while (!$nEntries) {
     //print "URL: ".$last_url."\n";
     curl_close($search);
 }
-print '******************************************extrace citation for each paper**********************************************************' . "\n";
+print '******************************************extract citation for each paper**********************************************************' . "\n";
 $doc = new DOMDocument();
 $doc->load('papers.xml');
 $citQuery = curl_init();
@@ -89,7 +89,11 @@ $citDoc->appendChild($r);
 $papers = $doc->getElementsByTagName("paper");
 foreach ($papers as $paper) {
     $order = (int) ($paper->getElementsByTagName("order")->item(0)->nodeValue);
-    print $order."\n";
+    $paperTitle = ($paper->getElementsByTagName("title")->item(0)->nodeValue);
+    if($order<69)continue;
+    print "\n".$order;
+    print "  paper title: ".$paperTitle;
+    
     $UT = $paper->getElementsByTagName("UT")->item(0)->nodeValue;
     $citation = array();
     if ($UT) {
@@ -110,6 +114,7 @@ foreach ($papers as $paper) {
         //print "\n" . $button . "\n";
 
         for ($i = 0; $i < $nPages; $i++) {
+            print "page " . ($i + 1) . ", ";
             foreach ($html->find('tr[id^=RECORD_]') as $record) {
                 $tmp = get_Record($record);
                 if (isset($tmp)) {
