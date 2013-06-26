@@ -88,8 +88,8 @@ $citDoc->appendChild($r);
 
 $papers = $doc->getElementsByTagName("paper");
 foreach ($papers as $paper) {
-    $citationCtr = 0;
     $order = (int) ($paper->getElementsByTagName("order")->item(0)->nodeValue);
+    print $order."\n";
     $UT = $paper->getElementsByTagName("UT")->item(0)->nodeValue;
     $citation = array();
     if ($UT) {
@@ -103,17 +103,16 @@ foreach ($papers as $paper) {
         $nPages = (int) ($html->find('span[id="pageCount.top"]', 0)->plaintext);
         $lnks = $html->find('table[id=topNavBar] tr td a');
         $button = $lnks[1]->href;
-        print "\n" . $button . "\n";
         parse_str($button, $vars);
-        $qid = (int) ($vars['qid']);
-        //print "\n" . $qid . "\n";
-        //print $page;
+        if (isset($vars['qid'])) {
+            $qid = (int) ($vars['qid']);
+        }
+        //print "\n" . $button . "\n";
+
         for ($i = 0; $i < $nPages; $i++) {
-            print "page " . $i . "\n";
             foreach ($html->find('tr[id^=RECORD_]') as $record) {
                 $tmp = get_Record($record);
                 if (isset($tmp)) {
-                    // print_r($tmp);
                     array_push($citation, $tmp);
                 }
             }
@@ -140,7 +139,7 @@ foreach ($papers as $paper) {
                 }
             }
         }
-        $citDoc->save("citedPaper.xml");
     }
+    $citDoc->save("citedPaper.xml");
 }
 ?>

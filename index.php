@@ -3,7 +3,6 @@
 require_once 'simple_html_dom.php';
 require_once 'post_data.php';
 
-
 set_time_limit(0);
 
 $ch = curl_init();
@@ -13,9 +12,6 @@ curl_setopt($ch, CURLOPT_HEADER, true);
 curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
 curl_setopt($ch, CURLOPT_AUTOREFERER, false);
 curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36");
-//curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-//curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-//curl_setopt($ch, CURLOPT_COOKIEJAR , "cookie.txt");
 $main_page = curl_exec($ch);
 //print "main" + "\n";
 //print $main_page;
@@ -26,23 +22,7 @@ $sid = $cookies['SID'];
 $sid = str_replace('"', '', $sid);
 $post['SID'] = $sid;
 print 'SID: ' . $sid . "\n";
-//go to next page
-//preg_match('#Location: (.*)#', $main_page, $r);
-// $l = trim($r[1]);
-//curl_setopt($ch,CURLOPT_URL,$l);
-//$main_page=curl_exec($ch);
-//preg_match('/^Set-Cookie:\s*([^;]*)/mi', $main_page, $m);
-//parse_str($m[1], $cookies);
-//$jsid=$cookies['JSESSIONID'];
-//print "JSID: ";
-//print $jsid;print "\n";
-//$init_url= 'http://apps.webofknowledge.com/home.do;jsessionid='.$jsid.'?SID='.$sid.'&SrcApp=CR&Init=Yes';
-//print $init_url.'\n';
-//curl_setopt($ch,CURLOPT_URL,$init_url);
-//$main_page=curl_exec($ch);
-//print '***********************initializing********************************'."\r\n";
-//print $main_page;
-//print $main_page;
+
 
 curl_close($ch);
 $nEntries = 0;

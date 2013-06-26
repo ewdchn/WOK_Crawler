@@ -55,7 +55,7 @@ function get_Record($record) {
     $ans['authors'] = array();
     $titleNode = $record->find('span[class=reference-title] value', 0);
     if (!$titleNode) {
-        // print $i . "unavailable" . "\n";
+        // print $i . "No title skipping" . "\n";
         return null;
     } else {
         $ans['title'] = $titleNode->innertext;
