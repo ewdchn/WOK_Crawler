@@ -95,7 +95,7 @@ foreach ($papers as $paper) {
     $order = (int) ($paper->getElementsByTagName("order")->item(0)->nodeValue);
     $paperTitle = ($paper->getElementsByTagName("title")->item(0)->nodeValue);
     print "\n" . $order;
-    print "\n  paper title: " . $paperTitle . "\n";
+    print "paper title: " . $paperTitle . "\n";
     $UT = $paper->getElementsByTagName("UT")->item(0)->nodeValue;
     $citation = array();
     if ($UT) {
@@ -135,4 +135,5 @@ foreach ($papers as $paper) {
     }
 }
 $writer->endElement();
+return;
 ?>

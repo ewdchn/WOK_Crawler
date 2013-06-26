@@ -10,6 +10,7 @@ function XML_add($doc, $parent, $child, $text = "") {
     $parent->appendChild($newnode);
     return $newnode;
 }
+
 function write_XML($writer, $data, $order) {
     if (!$data) {
         print "Error: data is empty\n";
@@ -18,7 +19,7 @@ function write_XML($writer, $data, $order) {
         $writer->startElement('paper');
         $writer->writeElement('order', $order);
         foreach ($data as $ct) {
-            $writer->startElement('citation');
+            $writer->startElement('citedPaper');
             foreach ($ct as $key => $value) {
                 if ($key == "authors") {
                     foreach ($value as $author) {
@@ -33,6 +34,7 @@ function write_XML($writer, $data, $order) {
         $writer->endElement();
     }
 }
+
 function get_DOI($file) {
     //print $file;
     $ans = "";
@@ -92,23 +94,26 @@ function get_Record($record) {
                 break;
             }
         }
-        if (isset($authorStr)) {
+        if (!isset($authorStr)) {
+            print "\n authorStr Not Found: Result: " . $ans['title'] . "\n";
+        } else {
             list($dump, $authors) = explode(':', $authorStr);
             $authors = explode(';', $authors);
-        }
-        else
-            print "\nError: authorStr Not Found: Result: " . $ans['title'] . "\n";
-        foreach ($authors as $author) {
-            if (!(strpos($author, $moreAuthors) === false)) {
-                $ans['more_authors'] = true;
-                break;
-            } else {
-                $author = trim($author, " .");
-                array_push($ans['authors'], $author);
+            foreach ($authors as $author) {
+                if (!(strpos($author, $moreAuthors) === false)) {
+                    $ans['more_authors'] = true;
+                    break;
+                } else {
+                    $author = trim($author, " .");
+                    array_push($ans['authors'], $author);
+                }
             }
         }
+
+
         $tmp = get_DOI2($record);
-        if($tmp)$ans['DOI'] = $tmp;
+        if ($tmp)
+            $ans['DOI'] = $tmp;
         return $ans;
     }
 }
