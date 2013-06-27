@@ -87,7 +87,7 @@ for ($i = 0; $i < $nEntries; $i++) {
     curl_setopt($articleQuery, CURLOPT_FOLLOWLOCATION, true);
     curl_setopt($articleQuery, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($articleQuery, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36");
-    $articleURL[$i] = "http://apps.webofknowledge.com/full_record.do?product=UA&search_mode=GeneralSearch&qid=" . $qid . "&SID=" . $sid . "&doc=" . $i;
+    $articleURL[$i] = "http://apps.webofknowledge.com/full_record.do?product=UA&search_mode=GeneralSearch&qid=" . $qid . "&SID=" . $sid . "&doc=" . $i+1;
     curl_setopt($articleQuery, CURLOPT_URL, $articleURL[$i]);
     $articleEntry[$i] = array();
     $authorStr = null;
@@ -116,16 +116,17 @@ for ($i = 0; $i < $nEntries; $i++) {
     $titleStr = $html->find('td[class=FullRecTitle]', 0)->find('value', 0)->plaintext;
     trim($titleStr, ' ');
     $articleEntry[$i]['title'] = str_replace('  ', ' ', $titleStr);
+    echo $articleEntry[$i]['title']."\n";
     $articleEntry[$i]['authors'] = array();
 //    print "\nRef Link = " . $citListRef;
 //    print "\npaper UT =" . $articleEntry[$i]['UT'] . "\n";
-    print "\n" . "Authors: ";
+    //print "\n" . "Authors: ";
     preg_match_all('/\(([^\(\)]+)\)/', $authorStr, $authors);
     foreach ($authors[1] as $author) {
         //$author = trim($author, "()");
         if ($author != "s") {
             array_push($articleEntry[$i]['authors'], $author);
-            print "|" . $author . "|";
+            //print "|" . $author . "|";
         }
     }
     curl_close($articleQuery);
