@@ -80,14 +80,14 @@ $articleEntry = array();
 print "***************************************************extracing Each Entry**********************************************************\n";
 for ($i = 0; $i < $nEntries; $i++) {
     $html = null;
-    print "\n" . "Processing Entry: " . $i . "\n";
+    print "\n" . "Processing Entry: " . $i+1 . "\n";
     $articleQuery = curl_init();
     curl_setopt($articleQuery, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
     curl_setopt($articleQuery, CURLOPT_AUTOREFERER, false);
     curl_setopt($articleQuery, CURLOPT_FOLLOWLOCATION, true);
     curl_setopt($articleQuery, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($articleQuery, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36");
-    $articleURL[$i] = "http://apps.webofknowledge.com/full_record.do?product=UA&search_mode=GeneralSearch&qid=" . $qid . "&SID=" . $sid . "&doc=" . $i+1;
+    $articleURL[$i] = "http://apps.webofknowledge.com/full_record.do?product=UA&search_mode=GeneralSearch&qid=" . $qid . "&SID=" . $sid . "&doc=" . ($i+1);
     curl_setopt($articleQuery, CURLOPT_URL, $articleURL[$i]);
     $articleEntry[$i] = array();
     $authorStr = null;
