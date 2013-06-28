@@ -10,13 +10,10 @@ curl_setopt($ch, CURLOPT_HEADER, true);
 curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
 curl_setopt($ch, CURLOPT_AUTOREFERER, false);
 curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36");
-//curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
-//curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-//curl_setopt($ch, CURLOPT_COOKIEJAR , "cookie.txt");
+
 $main_page = curl_exec($ch);
 print "main" + "\n";
-//print $main_page;
-//get SID
+
 preg_match('/^Set-Cookie:\s*([^;]*)/mi', $main_page, $m);
 parse_str($m[1], $cookies);
 $sid = $cookies['SID'];
@@ -43,9 +40,6 @@ while (!$nEntries) {
     curl_setopt($search, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36");
     curl_setopt($search, CURLOPT_POST, true);
     curl_setopt($search, CURLOPT_POSTFIELDS, http_build_query($post));
-    //curl_setopt($search,CURLOPT_COOKIEFILE,"cookie.txt");
-    //curl_setopt( $search, CURLOPT_REFERER , $referer_url );
-    //curl_setopt($search, CURLOPT_COOKIEJAR , "cookie.txt");
     $result = curl_exec($search);
     preg_match('/handle_nav_final_counts\([^)]+\)/', $result, $m);
     preg_match('/\'[^,]+\'/', $m[0], $n);
@@ -59,18 +53,25 @@ while (!$nEntries) {
     $html = str_get_html($result);
     $entries_str = $html->find('span[id=hitCount.bottom]', 0)->innertext;
     str_replace(" ", "", $entries_str);
-    //print "\n".$entries_str."\n";
     print "entries string" . "\n" . $entries_str . "\n";
     $nEntries = (int) ($entries_str);
     print "number of results:" . $nEntries . "\n";
-    //foreach($html->find('tr[id^=RECORD_]') as $record){
-    //    print $record->find('a[class=smallV110]',0)->plaintext."\n";
-    //    print $record->children(1)->children(1)->plaintext."\n";
-    //}
-    //print "URL: ".$last_url."\n";
     curl_close($search);
 }
-print '******************************************extract citation for each paper**********************************************************' . "\n";
+
+
+
+
+
+
+print '******************************************EXTRACT CITATION FOR EACH PAPER**********************************************************' . "\n";
+
+
+
+
+
+
+
 $doc = new DOMDocument();
 $doc->load('papers.xml');
 $citQuery = curl_init();
@@ -81,10 +82,6 @@ curl_setopt($citQuery, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($citQuery, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36");
 
 
-//$citDoc = new DOMDocument();
-//$citDoc->formatOutput = true;
-//$r = $citDoc->createElement("citations");
-//$citDoc->appendChild($r);
 $writer = new XMLWriter();
 $writer->openUri("citation.xml");
 $writer->startDocument('1.0', 'UTF-8');
@@ -99,12 +96,12 @@ foreach ($papers as $paper) {
     $UT = $paper->getElementsByTagName("UT")->item(0)->nodeValue;
     $citation = array();
     if ($UT) {
+        //go to first page of citation list
         //http://apps.webofknowledge.com/summary.do?product=UA&parentProduct=UA&search_mode=CitedRefList&parentQid=1&qid=2&SID=V1J3pefKLcEm@cdjm62&page=2
         $nextPageURLHeader = 'http://apps.webofknowledge.com/summary.do?product=UA&parentProduct=UA&search_mode=CitedRefList&';
         $queryURL = $citLinkHeader . $sid . '&UT=' . $UT;
         curl_setopt($citQuery, CURLOPT_URL, $queryURL);
         $page = curl_exec($citQuery);
-        //print $page;
         $html = str_get_html($page);
         $nPages = (int) ($html->find('span[id="pageCount.top"]', 0)->plaintext);
         $lnks = $html->find('table[id=topNavBar] tr td a');
@@ -113,8 +110,7 @@ foreach ($papers as $paper) {
         if (isset($vars['qid'])) {
             $qid = (int) ($vars['qid']);
         }
-        //print "\n" . $button . "\n";
-
+        //citation List Pages
         for ($i = 0; $i < $nPages; $i++) {
             print "page " . ($i + 1) . ", ";
             foreach ($html->find('tr[id^=RECORD_]') as $record) {
@@ -130,8 +126,8 @@ foreach ($papers as $paper) {
                 $html = str_get_html($page);
             }
         }
+        //done write data to XML
         write_XML($writer, $citation, $order);
-       
     }
 }
 $writer->endElement();

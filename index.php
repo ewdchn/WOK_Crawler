@@ -81,11 +81,6 @@ $articleEntry = array();
 
 
 
-
-
-
-
-
 print "***************************************************extracing Each Entry**********************************************************\n";
 
 
@@ -93,19 +88,15 @@ print "***************************************************extracing Each Entry**
 
 
 
-
-
-
-for ($i = 0; $i < $nEntries; $i++) {
-    $html = null;
-    print "\n" . "Processing Entry: " . $i + 1 . "\n";
+for ($i = 1; $i <= $nEntries; $i++) {
+    echo "\n" . "Processing Entry: " . $i. "\n";
     $articleQuery = curl_init();
     curl_setopt($articleQuery, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
     curl_setopt($articleQuery, CURLOPT_AUTOREFERER, false);
     curl_setopt($articleQuery, CURLOPT_FOLLOWLOCATION, true);
     curl_setopt($articleQuery, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($articleQuery, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36");
-    $articleURL[$i] = "http://apps.webofknowledge.com/full_record.do?product=UA&search_mode=GeneralSearch&qid=" . $qid . "&SID=" . $sid . "&doc=" . ($i + 1);
+    $articleURL[$i] = "http://apps.webofknowledge.com/full_record.do?product=UA&search_mode=GeneralSearch&qid=" . $qid . "&SID=" . $sid . "&doc=" . ($i);
     curl_setopt($articleQuery, CURLOPT_URL, $articleURL[$i]);
     $content = curl_exec($articleQuery);
     while (!($tmpAtcEntry = articleEntryExtract($content))) {
@@ -113,6 +104,7 @@ for ($i = 0; $i < $nEntries; $i++) {
         $content = curl_exec($articleQuery);
     }
     $articleEntry[$i] = $tmpAtcEntry;
+    $articleEntry[$i]['order'] = $i;
     curl_close($articleQuery);
     print"\n";
     print_r($articleEntry[$i]);
@@ -127,9 +119,9 @@ $doc->appendChild($r);
 foreach ($articleEntry as $paper) {
     $p = XML_add($doc, $r, "paper");
     XML_add($doc, $p, "title", $paper['title']);
-    XML_add($doc, $p, "DOI", $paper['DOI']);
-    XML_add($doc, $p, "UT", $paper['UT']);
-    XML_add($doc, $p, 'order', $paper['content']);
+    if(isset($paper['DOI']))XML_add($doc, $p, "DOI", $paper['DOI']);
+    if(isset($paper['UT']))XML_add($doc, $p, "UT", $paper['UT']);
+    XML_add($doc, $p, 'order', $paper['order']);
     foreach ($paper['authors'] as $authorName) {
         XML_add($doc, $p, "author", $authorName);
     }
@@ -147,7 +139,6 @@ for ($i = 0; $i < $nEntries; $i++) {
     $queryURL = $citLinkHeader . $SID . '&UT=' . $articleEntry[$i]['UT'];
     //curl_setopt($articleQuery, CURLOPT_URL, $articleEntry[$i]['citLink']);
     $result = curl_exec($citQuery);
-
     $html = str_get_html($result);
     $nextPageLnk = $html->find();
     $nPages = (int) ($html->find('span[id="pageCount.top"]', 0)->plaintext);
