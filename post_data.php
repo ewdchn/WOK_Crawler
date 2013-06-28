@@ -35,25 +35,26 @@ function write_XML($writer, $data, $order) {
     }
 }
 
-function get_DOI($file) {
-    //print $file;
-    $ans = "";
-    $html = str_get_html($file);
-    foreach ($html->find('span[class=FR_label]') as $ttt) {
+function get_DOI(&$html) {
+    foreach ($html->find('td[class=fr_data_row] span[class=FR_label]') as $ttt) {
         $pos = strpos($ttt->plaintext, 'DOI');
-        //print $pos."\n";
-        if ($pos === false) {
-            
-        } else {
-            $ans = $ttt->nextSibling()->plaintext;
-            //print $ans;
-            if (strpos($ans, '10') === 0) {
-                return $ans;
+        if ($pos !== false) {
+            $ans = $ttt->parent()->plaintext;
+            $ans = preg_split('/\s+/', $ans);;
+            foreach ($ans as $key => $token) {
+                if (strpos($token, 'DOI') !== false) {
+                    if (strpos($ans[$key + 1], "&") !== false) {
+                        list($DOI, ) = explode("&", $ans[$key + 1]);
+                    } else {
+                        $DOI = $ans[$key + 1];
+                    }
+                    break;
+                }
             }
-            else
-                return "";
+            return $DOI;
         }
     }
+    return false;
 }
 
 function get_DOI2($html) {
