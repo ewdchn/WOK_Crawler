@@ -39,7 +39,7 @@ function articleEntryExtract(&$content) {
         $tmp['UT'] = $url_vars['amp;UT'];
     }
 
-
+    
     return $tmp;
 }
 
