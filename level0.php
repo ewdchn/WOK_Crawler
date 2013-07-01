@@ -62,12 +62,15 @@ foreach ($articleEntry as $paper) {
     XML_add($doc, $p, "title", $paper['title']);
     if (isset($paper['DOI']))
         XML_add($doc, $p, "DOI", $paper['DOI']);
+    if (isset($paper['Source']))
+        XML_add($doc, $p, "Source", $paper['Source']);
     if (isset($paper['UT']))
         XML_add($doc, $p, "UT", $paper['UT']);
     XML_add($doc, $p, 'order', $paper['order']);
     foreach ($paper['authors'] as $authorName) {
         XML_add($doc, $p, "author", $authorName);
     }
+    
 }
 $doc->save("papers.xml");
 return;

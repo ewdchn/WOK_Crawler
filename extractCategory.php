@@ -1,9 +1,5 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
 function get_categories($html) {
     foreach ($html->find('tr b')as $b) {
@@ -20,7 +16,23 @@ function get_categories($html) {
     return $categories;
 }
 
+function get_full_journal_title($html) {
+    foreach ($html->find('tr b')as $b) {
+        if (strpos($b->innertext, "Full Journal Title") !== false) {
+            $j = html_entity_decode($b->parent()->nextSibling()->find('text', 0)->plaintext);
+            // return trim(preg_replace('/^[\pZ\pC]+|[\pZ\pC]+$/u', '', $j));
+            return trim(str_replace("\xC2\xA0", "", $j));
+            
+        }
+    }
+}
+
 set_time_limit(0);
+
+$flag = false;
+
+
+
 $cookie_file = 'cookie.txt';
 $journals = array();
 require_once 'simple_html_dom.php';
@@ -56,28 +68,52 @@ curl_setopt($ch, CURLOPT_URL, 'http://admin-apps.webofknowledge.com/JCR/JCR');
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($form_data));
 $cursor = 1;
-do {
-    echo "$cursor \n";
-    $page = curl_exec($ch);
-    $html = str_get_html($page);
-    foreach ($html->find('td[class=sorted] a') as $j) {
-        $journals[$j->innertext] = $j->href;
-    }
-    curl_setopt($ch, CURLOPT_POST, false);
-    $cursor+=20;
-    curl_setopt($ch, CURLOPT_URL, 'admin-apps.webofknowledge.com/JCR/JCR?RQ=SELECT_ALL&cursor=' . $cursor);
-} while ($cursor < 8411);
+
+if ($flag) {
+    do {
+        echo "$cursor \n";
+        $page = curl_exec($ch);
+        $html = str_get_html($page);
+        foreach ($html->find('td[class=sorted] a') as $j) {
+            $journals[$j->innertext] = $j->href;
+        }
+        curl_setopt($ch, CURLOPT_POST, false);
+        $cursor+=20;
+        curl_setopt($ch, CURLOPT_URL, 'admin-apps.webofknowledge.com/JCR/JCR?RQ=SELECT_ALL&cursor=' . $cursor);
+    } while ($cursor < 8411);
 //print_r($journals);
+    $file = fopen('journal_list', 'w');
+    fwrite($file, serialize($journals));
+    fclose($file);
+} else {
+    $page = curl_exec($ch);
+    curl_setopt($ch, CURLOPT_POST, false);
+    $file = fopen('journal_list', 'r');
+    $journals = unserialize(fgets($file));
+}
 
-
-
-$journal_categories = array();
+$writer = new XMLWriter();
+$writer->openUri("categories.xml");
+$writer->startDocument('1.0', 'UTF-8');
+$writer->setIndent(4);
+$writer->startElement('journals');
 foreach ($journals as $journal_name => $journal_url) {
+    $writer->startElement('journal');
+    $journal_categories = array();
     curl_setopt($ch, CURLOPT_URL, $journal_url);
     $html = str_get_html(curl_exec($ch));
-    $journal_categories[$journal_name]= get_categories($html);
+    $journal_categories['categories'] = get_categories($html);
+    $journal_categories['full_title'] = get_full_journal_title($html);
+    echo $journal_name . " ";
+    echo $journal_categories['full_title'] . "\n";
+    $writer->writeElement('title', $journal_categories['full_title']);
+    foreach ($journal_categories['categories'] as $cat) {
+        $writer->writeElement('category', $cat);
+    }
+    $writer->writeElement('abbrv', $journal_name);
+    $writer->endElement();
 }
-$file = fopen('journal_cats', 'w');
-fwrite($file, serialize($journal_categories));
+$writer->endElement();
+
 return;
 ?>

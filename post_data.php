@@ -4,6 +4,7 @@ function XML_add($doc, $parent, $child, $text = "") {
     // $parent --> DOM node
     // $child --> string
     $newnode = $doc->createElement($child);
+    
     if ($text) {
         $newnode->appendChild($doc->createTextNode($text));
     }
@@ -35,23 +36,19 @@ function write_XML($writer, $data, $order) {
     }
 }
 
-function get_DOI(&$html) {
+function get_attribute(&$html, $attr = 'DOI') {
     foreach ($html->find('td[class=fr_data_row] span[class=FR_label]') as $ttt) {
-        $pos = strpos($ttt->plaintext, 'DOI');
+        $pos = strpos($ttt->plaintext, $attr);
         if ($pos !== false) {
-            $ans = $ttt->parent()->plaintext;
-            $ans = preg_split('/\s+/', $ans);;
+            foreach ($ttt->parent()->children as $ss) {
+                $ans[] = $ss->innertext;
+            }
+            //print_r($ans);
             foreach ($ans as $key => $token) {
-                if (strpos($token, 'DOI') !== false) {
-                    if (strpos($ans[$key + 1], "&") !== false) {
-                        list($DOI, ) = explode("&", $ans[$key + 1]);
-                    } else {
-                        $DOI = $ans[$key + 1];
-                    }
-                    break;
+                if (strpos($token, $attr) !== false) {
+                    return trim($ans[$key + 1], ' ');
                 }
             }
-            return $DOI;
         }
     }
     return false;
@@ -80,44 +77,42 @@ function get_Record($record) {
     $ans['authors'] = array();
     $titleNode = $record->find('span[class=reference-title] value', 0);
     if (!$titleNode) {
-        return null;        // print $i . "No title skipping" . "\n";
+        $ans['title'] = 'unavailable';        // print $i . "No title skipping" . "\n";
     } else {
         $ans['title'] = $titleNode->innertext;
-        if (!$titleNode->parent()->parent()->href) {
-            
-        } else {
-            parse_str($titleNode->parent()->parent()->href, $url_vars);
-            $ans['UT'] = $url_vars['amp;isickref'];
-        }
-        foreach ($record->find('td[class=summary_data] div span[class=label]') as $div) {
-            if (!(strpos($div->plaintext, "Author") === false)) {
-                $authorStr = $div->parent()->plaintext;
-                break;
-            }
-        }
-        if (!isset($authorStr)) {
-            print "\n authorStr Not Found: Result: " . $ans['title'] . "\n";
-        } else {
-            list($dump, $authors) = explode(':', $authorStr);
-            $authors = explode(';', $authors);
-            foreach ($authors as $author) {
-                if (!(strpos($author, $moreAuthors) === false)) {
-                    $ans['more_authors'] = true;
-                    break;
-                } else {
-                    $author = trim($author, " .");
-                    array_push($ans['authors'], $author);
-                }
-            }
-        }
-
-
-        $tmp = get_DOI2($record);
-        if ($tmp)
-            $ans['DOI'] = $tmp;
-        return $ans;
     }
+    if (!$titleNode->parent()->parent()->href) {
+        
+    } else {
+        parse_str($titleNode->parent()->parent()->href, $url_vars);
+        $ans['UT'] = $url_vars['amp;isickref'];
+    }
+    foreach ($record->find('td[class=summary_data] div span[class=label]') as $div) {
+        if (!(strpos($div->plaintext, "Author") === false)) {
+            $authorStr = $div->parent()->plaintext;
+            break;
+        }
+    }
+    if (!isset($authorStr)) {
+        print "\n authorStr Not Found: Result: " . $ans['title'] . "\n";
+    } else {
+        list($dump, $authors) = explode(':', $authorStr);
+        $authors = explode(';', $authors);
+        foreach ($authors as $author) {
+            if (!(strpos($author, $moreAuthors) === false)) {
+                $ans['more_authors'] = true;
+                break;
+            } else {
+                $author = trim($author, " .");
+                array_push($ans['authors'], $author);
+            }
+        }
+    }
+
+
+    $tmp = get_DOI2($record);
+    if ($tmp)
+        $ans['DOI'] = $tmp;
+    return $ans;
 }
-
-
 ?>
