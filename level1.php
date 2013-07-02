@@ -19,7 +19,7 @@ print '******************************************EXTRACT CITATION FOR EACH PAPER
 
 
 $doc = new DOMDocument();
-$doc->load('papers.xml');
+$doc->load('level0.xml');
 $citQuery = curl_init();
 $citLinkHeader = 'http://apps.webofknowledge.com/CitedRefList.do?product=UA&sortBy=PY.D&search_mode=CitedRefList&SID=';
 curl_setopt($citQuery, CURLOPT_AUTOREFERER, false);
@@ -29,11 +29,12 @@ curl_setopt($citQuery, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64) A
 
 
 $writer = new XMLWriter();
-$writer->openUri("citation.xml");
+$writer->openUri("level1.xml");
 $writer->startDocument('1.0', 'UTF-8');
 $writer->setIndent(4);
 $writer->startElement('citations');
 $papers = $doc->getElementsByTagName("paper");
+$l1order=1;
 foreach ($papers as $paper) {
     $order = (int) ($paper->getElementsByTagName("order")->item(0)->nodeValue);
     $paperTitle = ($paper->getElementsByTagName("title")->item(0)->nodeValue);
@@ -62,12 +63,15 @@ foreach ($papers as $paper) {
             foreach ($html->find('tr[id^=RECORD_]') as $record) {
                 $tmp = get_Record($record);
                 if (isset($tmp)) {
+                    $tmp['order']=$l1order;
+                    $l1order++;
                     array_push($citation, $tmp);
                 }
             }
             if ($i != $nPages - 1) {
                 $queryURL = $nextPageURLHeader . '&SID=' . $sid . '&qid=' . $qid . '&page=' . ($i + 2);
                 curl_setopt($citQuery, CURLOPT_URL, $queryURL);
+                $html->clear();
                 $page = curl_exec($citQuery);
                 $html = str_get_html($page);
             }

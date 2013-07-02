@@ -72,6 +72,6 @@ foreach ($articleEntry as $paper) {
     }
     
 }
-$doc->save("papers.xml");
+$doc->save("level0.xml");
 return;
 ?>

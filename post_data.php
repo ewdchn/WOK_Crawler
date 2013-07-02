@@ -4,7 +4,7 @@ function XML_add($doc, $parent, $child, $text = "") {
     // $parent --> DOM node
     // $child --> string
     $newnode = $doc->createElement($child);
-    
+
     if ($text) {
         $newnode->appendChild($doc->createTextNode($text));
     }
@@ -71,22 +71,43 @@ function get_DOI2($html) {
     }
 }
 
-function get_Record($record) {
+function get_Src(&$html) {
+    foreach ($html->find('span[class=label]') as $span) {
+        $pos = strpos($span->plaintext, 'Source');
+        if ($pos === false) {
+            
+        } else {
+            return trim(html_entity_decode(str_replace("&nbsp;", "", $span->parent()->find("text", 2)->innertext)));
+        }
+    }
+    return false;
+}
+
+function get_Record(&$record) {
     $moreAuthors = 'et al';
     $ans = array();
     $ans['authors'] = array();
+    
+    
+    //title
     $titleNode = $record->find('span[class=reference-title] value', 0);
     if (!$titleNode) {
         $ans['title'] = 'unavailable';        // print $i . "No title skipping" . "\n";
     } else {
         $ans['title'] = $titleNode->innertext;
-    }
-    if (!$titleNode->parent()->parent()->href) {
         
-    } else {
-        parse_str($titleNode->parent()->parent()->href, $url_vars);
-        $ans['UT'] = $url_vars['amp;isickref'];
+        
+        
+        //UT
+        if (!$titleNode->parent()->parent()->href) {
+            
+        } else {
+            parse_str(html_entity_decode($titleNode->parent()->parent()->href), $url_vars);
+            $ans['UT'] = $url_vars['isickref'];
+        }
     }
+    
+    //author
     foreach ($record->find('td[class=summary_data] div span[class=label]') as $div) {
         if (!(strpos($div->plaintext, "Author") === false)) {
             $authorStr = $div->parent()->plaintext;
@@ -109,10 +130,14 @@ function get_Record($record) {
         }
     }
 
-
+    //DOI & source
     $tmp = get_DOI2($record);
+    $src = get_Src($record);
+    if ($src)
+        $ans['Source'] = $src;
     if ($tmp)
         $ans['DOI'] = $tmp;
     return $ans;
 }
+
 ?>
