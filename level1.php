@@ -18,8 +18,8 @@ print "qid : $qid \n";
 print '******************************************EXTRACT CITATION FOR EACH PAPER**********************************************************' . "\n";
 
 
-$doc = new DOMDocument();
-$doc->load('level0.xml');
+$l0doc = new DOMDocument();
+$l0doc->load('level0.xml');
 $citQuery = curl_init();
 $citLinkHeader = 'http://apps.webofknowledge.com/CitedRefList.do?product=UA&sortBy=PY.D&search_mode=CitedRefList&SID=';
 curl_setopt($citQuery, CURLOPT_AUTOREFERER, false);
@@ -33,7 +33,7 @@ $writer->openUri("level1.xml");
 $writer->startDocument('1.0', 'UTF-8');
 $writer->setIndent(4);
 $writer->startElement('citations');
-$papers = $doc->getElementsByTagName("paper");
+$papers = $l0doc->getElementsByTagName("paper");
 $l1order=1;
 foreach ($papers as $paper) {
     $order = (int) ($paper->getElementsByTagName("order")->item(0)->nodeValue);

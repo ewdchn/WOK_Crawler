@@ -53,25 +53,25 @@ for ($i = 1; $i <= $nEntries; $i++) {
 
 print "************************************dumping XML***************************\n";
 //dumpXML
-$doc = new DOMDocument();
-$doc->formatOutput = true;
-$r = $doc->createElement("papers");
-$doc->appendChild($r);
+$l0doc = new DOMDocument();
+$l0doc->formatOutput = true;
+$r = $l0doc->createElement("papers");
+$l0doc->appendChild($r);
 foreach ($articleEntry as $paper) {
-    $p = XML_add($doc, $r, "paper");
-    XML_add($doc, $p, "title", $paper['title']);
+    $p = XML_add($l0doc, $r, "paper");
+    XML_add($l0doc, $p, "title", $paper['title']);
     if (isset($paper['DOI']))
-        XML_add($doc, $p, "DOI", $paper['DOI']);
+        XML_add($l0doc, $p, "DOI", $paper['DOI']);
     if (isset($paper['Source']))
-        XML_add($doc, $p, "Source", $paper['Source']);
+        XML_add($l0doc, $p, "Source", $paper['Source']);
     if (isset($paper['UT']))
-        XML_add($doc, $p, "UT", $paper['UT']);
-    XML_add($doc, $p, 'order', $paper['order']);
+        XML_add($l0doc, $p, "UT", $paper['UT']);
+    XML_add($l0doc, $p, 'order', $paper['order']);
     foreach ($paper['authors'] as $authorName) {
-        XML_add($doc, $p, "author", $authorName);
+        XML_add($l0doc, $p, "author", $authorName);
     }
     
 }
-$doc->save("level0.xml");
+$l0doc->save("level0.xml");
 return;
 ?>
