@@ -33,7 +33,7 @@ $post = array(
     "rs_linksWindows" => "newWindow",
 );
 
-function get_SID() {
+function get_session_SID() {
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_URL, "www.webofknowledge.com");

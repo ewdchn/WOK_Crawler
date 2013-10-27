@@ -1,11 +1,10 @@
 <?php
-
 set_time_limit(0);
 require_once 'simple_html_dom.php';
 require_once 'post_data.php';
 require_once 'initialize.php';
 
-$sid = get_SID();
+$sid = get_session_SID();
 $post['SID'] = $sid;
 
 $nEntries = 0;
@@ -20,13 +19,10 @@ print '******************************************EXTRACT CITATION FOR EACH PAPER
 
 $l0doc = new DOMDocument();
 $l0doc->load('level0.xml');
-$citQuery = curl_init();
 $citLinkHeader = 'http://apps.webofknowledge.com/CitedRefList.do?product=UA&sortBy=PY.D&search_mode=CitedRefList&SID=';
-curl_setopt($citQuery, CURLOPT_AUTOREFERER, false);
-curl_setopt($citQuery, CURLOPT_FOLLOWLOCATION, true);
-curl_setopt($citQuery, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($citQuery, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36");
 
+$citQuery = curl_init();
+curl_setopt_array($citQuery, $curl_options);
 
 $writer = new XMLWriter();
 $writer->openUri("level1.xml");
@@ -34,36 +30,48 @@ $writer->startDocument('1.0', 'UTF-8');
 $writer->setIndent(4);
 $writer->startElement('citations');
 $papers = $l0doc->getElementsByTagName("paper");
-$l1order=1;
+$l1order = 1;
+
+/*
+ * Associate L0 Entries with L1
+ *
+ *
+ *
+ *
+ */
 foreach ($papers as $paper) {
-    $order = (int) ($paper->getElementsByTagName("order")->item(0)->nodeValue);
-    $paperTitle = ($paper->getElementsByTagName("title")->item(0)->nodeValue);
-    print "\n" . $order;
-    print "paper title: " . $paperTitle . "\n";
-    $UT = $paper->getElementsByTagName("UT")->item(0)->nodeValue;
+    $upperOrder = (int)($paper->getElementsByTagName("order")->item(0)->nodeValue);
+    $upperTitle = ($paper->getElementsByTagName("title")->item(0)->nodeValue);
+//    print "\n" . $upperOrder;
+//    print "paper title: " . $upperTitle . "\n";
+    $upperUT = $paper->getElementsByTagName("UT")->item(0)->nodeValue;
     $citation = array();
-    if ($UT) {
+    if ($upperUT) {
         //go to first page of citation list
         //http://apps.webofknowledge.com/summary.do?product=UA&parentProduct=UA&search_mode=CitedRefList&parentQid=1&qid=2&SID=V1J3pefKLcEm@cdjm62&page=2
         $nextPageURLHeader = 'http://apps.webofknowledge.com/summary.do?product=UA&parentProduct=UA&search_mode=CitedRefList&';
-        $queryURL = $citLinkHeader . $sid . '&UT=' . $UT;
-        curl_setopt($citQuery, CURLOPT_URL, $queryURL);
+        curl_setopt($citQuery, CURLOPT_URL, $citLinkHeader . $sid . '&UT=' . $upperUT);
         $page = curl_exec($citQuery);
+        $page = html_entity_decode($page);
+        if (isset($html)) {
+            $html->clear();
+            unset($html);
+        }
         $html = str_get_html($page);
-        $nPages = (int) ($html->find('span[id="pageCount.top"]', 0)->plaintext);
+        $nPages = (int)($html->find('span[id="pageCount.top"]', 0)->plaintext);
         $lnks = $html->find('table[id=topNavBar] tr td a');
         $button = $lnks[1]->href;
         parse_str($button, $vars);
         if (isset($vars['qid'])) {
-            $qid = (int) ($vars['qid']);
+            $qid = (int)($vars['qid']);
         }
         //citation List Pages
         for ($i = 0; $i < $nPages; $i++) {
-            print "page " . ($i + 1) . ", ";
+//            echo "page " . ($i + 1) . ", ";
             foreach ($html->find('tr[id^=RECORD_]') as $record) {
-                $tmp = get_Record($record);
+                $tmp = Arr_ParseCitRecordNode($record);
                 if (isset($tmp)) {
-                    $tmp['order']=$l1order;
+                    $tmp['order'] = $l1order;
                     $l1order++;
                     array_push($citation, $tmp);
                 }
@@ -71,15 +79,18 @@ foreach ($papers as $paper) {
             if ($i != $nPages - 1) {
                 $queryURL = $nextPageURLHeader . '&SID=' . $sid . '&qid=' . $qid . '&page=' . ($i + 2);
                 curl_setopt($citQuery, CURLOPT_URL, $queryURL);
-                $html->clear();
                 $page = curl_exec($citQuery);
+                $page = html_entity_decode($page);
+                $html->clear();
+                unset($html);
                 $html = str_get_html($page);
             }
         }
         //done write data to XML
-        write_XML($writer, $citation, $order);
+        write_XML($writer, $citation, $upperOrder);
     }
 }
 $writer->endElement();
+echo "done";
 return;
 ?>

@@ -7,8 +7,9 @@
 require_once 'post_data.php';
 require_once 'simple_html_dom.php';
 
-function articleEntryExtract(&$content) {
-    $html = str_get_html($content);
+function Arr_extractFullRecordPage(&$content)
+{
+    $html = str_get_html(html_entity_decode($content));
     $tmp = array();
 
     //get title
@@ -30,22 +31,38 @@ function articleEntryExtract(&$content) {
         array_walk($tmp['authors'], create_function('&$val', '$val = trim($val,". ");'));
     }
     //get DOI
-    if (($tmpDOI = get_attribute($html)) !== false) {
+    if (($tmpDOI = recordPage_getAttr($html,'DOI')) !== false) {
         $tmp['DOI'] = $tmpDOI;
     }
 
     //get Source
-    if (($tmpSrc = get_attribute($html, 'Source')) !== false) {
-        $tmp['Source']=  html_entity_decode($tmpSrc);
+    if (($tmpSrc = recordPage_getAttr($html, 'Source')) !== false) {
+        $tmp['Source'] = html_entity_decode($tmpSrc);
     }
     //get UT
     if ($html->find('a[title^="View this record"]', 0)) {
-        $citListRef = 'http://apps.webofknowledge.com' . $html->find('a[title^="View this record"]', 0)->href;
+        $citListRef = $html->find('a[title^="View this record"]', 0)->href;
         parse_str($citListRef, $url_vars);
-        $tmp['UT'] = $url_vars['amp;UT'];
+        $tmp['UT'] = $url_vars['UT'];
+    }
+
+    //get REFID
+    foreach ($html->find('span.FR_label') as $span) {
+        $pos = strpos($span->plaintext, 'Times Cited');
+        if ($pos === false) {
+        } else {
+            $parent = $span->parent();
+            if (($a = $parent->find('a', 0)) !== false) {
+                parse_str($a, $vars);
+                if (isset($vars['REFID']))
+                    $tmp['REFID'] = $vars['REFID'];
+            }
+        }
     }
 
     //get Source
+    $html->clear();
+    unset($html);
     return $tmp;
 }
 

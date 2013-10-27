@@ -5,7 +5,7 @@ require_once 'simple_html_dom.php';
 require_once 'post_data.php';
 require_once 'initialize.php';
 
-$sid = get_SID();
+$sid = get_session_SID();
 $post['SID'] = $sid;
 
 $nEntries = 0;
@@ -22,11 +22,7 @@ $l0doc = new DOMDocument();
 $l0doc->load('level1.xml');
 $citQuery = curl_init();
 $citLinkHeader = 'http://apps.webofknowledge.com/CitedRefList.do?product=UA&sortBy=PY.D&search_mode=CitedRefList&SID=';
-curl_setopt($citQuery, CURLOPT_AUTOREFERER, false);
-curl_setopt($citQuery, CURLOPT_FOLLOWLOCATION, true);
-curl_setopt($citQuery, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($citQuery, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36");
-
+curl_setopt_array($citQuery, $curl_options);
 
 $writer = new XMLWriter();
 $writer->openUri("level2.xml");
@@ -42,9 +38,9 @@ foreach ($papers as $paper) {
     if (!$paper->getElementsByTagName("UT")->length) {
         continue;
     }
-    $order = (int) ($paper->getElementsByTagName("order")->item(0)->nodeValue);
+    $upperOrder = (int)($paper->getElementsByTagName("order")->item(0)->nodeValue);
     $paperTitle = ($paper->getElementsByTagName("title")->item(0)->nodeValue);
-    print "\n" . $order;
+    print "\n" . $upperOrder;
     print "paper title: " . $paperTitle . "\n";
     $UT = $paper->getElementsByTagName("UT")->item(0)->nodeValue;
     $citation = array();
@@ -55,20 +51,29 @@ foreach ($papers as $paper) {
         $queryURL = $citLinkHeader . $sid . '&UT=' . $UT;
         curl_setopt($citQuery, CURLOPT_URL, $queryURL);
         $page = curl_exec($citQuery);
+        $page = html_entity_decode($page);
+        if (isset($html)) {
+            $html->clear();
+            unset($html);
+        }
         $html = str_get_html($page);
-        $nPages = (int) ($html->find('span[id="pageCount.top"]', 0)->plaintext);
+        $nPages = (int)($html->find('span[id="pageCount.top"]', 0)->plaintext);
         $lnks = $html->find('table[id=topNavBar] tr td a');
         $button = $lnks[1]->href;
         parse_str($button, $vars);
         if (isset($vars['qid'])) {
-            $qid = (int) ($vars['qid']);
+            $qid = (int)($vars['qid']);
         }
         //citation List Pages
         for ($i = 0; $i < $nPages; $i++) {
-            print "page " . ($i + 1) . ", ";
+//            print "page " . ($i + 1) . ", ";
+            //each citation record
             foreach ($html->find('tr[id^=RECORD_]') as $record) {
-                $tmp = get_Record($record);
+                $tmp = Arr_ParseCitRecordNode($record);
                 if (isset($tmp)) {
+                    if(isset($tmp['UT'])){
+
+                    }
                     $tmp['order'] = $l1order;
                     $l1order++;
                     array_push($citation, $tmp);
@@ -77,15 +82,18 @@ foreach ($papers as $paper) {
             if ($i != $nPages - 1) {
                 $queryURL = $nextPageURLHeader . '&SID=' . $sid . '&qid=' . $qid . '&page=' . ($i + 2);
                 curl_setopt($citQuery, CURLOPT_URL, $queryURL);
-                $html->clear();
                 $page = curl_exec($citQuery);
+                $page = html_entity_decode($page);
+                $html->clear();
+                unset($html);
                 $html = str_get_html($page);
             }
         }
         //done write data to XML
-        write_XML($writer, $citation, $order);
+        write_XML($writer, $citation, $upperOrder);
     }
 }
 $writer->endElement();
+echo "done";
 return;
 ?>
